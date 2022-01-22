@@ -1,12 +1,20 @@
 import './App.css';
+import {Button} from 'react-onsenui';
+import 'onsenui/css/onsenui.css';
+import 'onsenui/css/onsen-css-components.css';
+import { TopNav } from './layouts/topNav/TopNav';
+import { Test1 } from './Test1';
 
-function App() {
+export const App = () => {
   return (
-    <div>
-      <h1>MARIA!</h1>
-      <h1>HELLO WORLD!</h1>
-    </div>
+    <>
+      {/* <TopNav />
+      <h1>hello world!</h1>
+      <Button modifier="large--cta">
+        Tap Me
+      </Button> */}
+      <Test1 />
+    </>
+    
   );
 }
-
-export default App;
