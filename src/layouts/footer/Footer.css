@@ -1,0 +1,16 @@
+/* .bottom-bar {
+    display: flex
+}; */
+
+.footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+};
+
+.footer-container {
+    display: flex;
+};
