@@ -1,17 +1,10 @@
-import { TopNav } from "../layouts/topNav/TopNav";
-import {Footer } from "../layouts/footer/Footer";
-import { Page, Button } from 'react-onsenui';
+import React from 'react';
 
 export const OpenRoles = () => {
     return (
-        <Page
-            // renderFixed={() => <Fab></Fab>}
-            renderToolbar={() => <TopNav /> }
-            contentStyle={{padding: 40}}
-            renderBottomToolbar={() => <Footer />}
-        >
             <main> 
-                <div>
+                <h1>Page 2</h1>
+                {/* <div>
                     <h1>Open Roles</h1>
                     <Button modifier="large--cta">
                         Nurse Practitioner
@@ -23,9 +16,8 @@ export const OpenRoles = () => {
                         Registered Nurse
                     </Button>
 
-                </div>
+                </div> */}
                 
             </main>
-        </Page>
     );
 }

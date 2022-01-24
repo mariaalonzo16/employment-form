@@ -1,18 +1,9 @@
-import { Input, Page, Checkbox, Radio, Button } from "react-onsenui";
-import { TopNav } from "../layouts/topNav/TopNav";
-import {Footer } from "../layouts/footer/Footer";
-
 
 export const Survey = () => {
     return (
-        <Page
-            // renderFixed={() => <Fab></Fab>}
-            renderToolbar={() => <TopNav /> }
-            contentStyle={{padding: 40}}
-            renderBottomToolbar={() => <Footer />}
-        >
+
             <main> 
-                <h1> Application</h1>
+                {/* <h1> Application</h1>
                     <form>
                     <Input
                         value='' float
@@ -77,11 +68,6 @@ export const Survey = () => {
                     />
                     <span> 5 years</span>
                     </div>
-                    {/* <Range 
-                        modifier="material"
-                        value={this.state.value}
-                        onChange={(event) => this.setState({value: parseInt(event.target.value)})}
-                    /> */}
                     <Input
                         type='file'
                     />
@@ -92,9 +78,8 @@ export const Survey = () => {
                     >
                         Submit
                     </Button>
-                    </form>
+                    </form> */}
                 
             </main>
-        </Page>
     );
 }

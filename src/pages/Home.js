@@ -1,29 +1,33 @@
-import { TopNav } from "../layouts/topNav/TopNav";
-import {Footer } from "../layouts/footer/Footer";
-import { Page, Button, Navigator } from 'react-onsenui';
+import { Button } from 'react-materialize'
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { OpenRoles } from './OpenRoles';
 
 
 export const Home = () => {
     return (
-
-        // <Navigator
-           
-        //     renderPage={() => {
-
-            <Page
-                // renderFixed={() => <Fab></Fab>}
-                renderToolbar={() => <TopNav /> }
-                contentStyle={{padding: 40}}
-                renderBottomToolbar={() => <Footer />}
-            >
                 <main> 
                     <div>
                     <h1>GoodEvening!</h1> 
                     <p>
                         Stay up-to-date with CodeHealth's  employment opportunities.
                     </p>
-                    
-                        <Button modifier="large--cta">
+                        {/* <OpenRoles
+                            to={{
+                                pathname: '/OpenRoles',
+                                search:  '?q=' + queryPath,
+                            }}
+                            OnClick={SetInitialResults}
+                        >
+
+                        </OpenRoles> */}
+                        <Button
+                            node="button"
+                            style={{
+                            marginRight: '5px'
+                            }}
+                            waves="light"
+                        >
                             Open Roles
                         </Button>
                 
@@ -31,8 +35,6 @@ export const Home = () => {
                         
                     </div>
                 </main>
-             </Page>   
-        //     }}
-        // />
     );
 }
+

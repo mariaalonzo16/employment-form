@@ -1,14 +1,9 @@
-import { BottomToolbar } from "react-onsenui";
 import "./Footer.css";
+import React from 'react';
+
 
 export const Footer = () => {
     return (
-        <BottomToolbar modifier="material">
-        <div className="footer-container">
-            <div className="footer">
-                CodeHealth
-            </div>
-        </div>
-        </BottomToolbar>
+        <h1>Footer</h1>
     );
 }
