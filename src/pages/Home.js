@@ -1,10 +1,11 @@
 import { Button } from 'react-materialize'
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import { OpenRoles } from './OpenRoles';
+import { useNavigate } from 'react-router-dom';
+// import { OpenRoles } from './OpenRoles';
 
 
 export const Home = () => {
+    let navigate = useNavigate();
     return (
                 <main> 
                     <div>
@@ -12,26 +13,19 @@ export const Home = () => {
                     <p>
                         Stay up-to-date with CodeHealth's  employment opportunities.
                     </p>
-                        {/* <OpenRoles
-                            to={{
-                                pathname: '/OpenRoles',
-                                search:  '?q=' + queryPath,
-                            }}
-                            OnClick={SetInitialResults}
-                        >
 
-                        </OpenRoles> */}
                         <Button
                             node="button"
                             style={{
                             marginRight: '5px'
                             }}
                             waves="light"
+                            onClick={() => {
+                                navigate("/open-roles")
+                            }}
                         >
                             Open Roles
                         </Button>
-                
-                        
                         
                     </div>
                 </main>
