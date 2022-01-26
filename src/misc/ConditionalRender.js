@@ -1,11 +1,4 @@
-import './TopNav.css';
-import React from 'react';
-import { NavItem, Navbar, Icon } from 'react-materialize';
-import { Home } from '../../pages/Home';
-
-
-
-export const TopNav = () => {
+export const ConditionalRender = () => {
     const age = 23
     return ( 
         <>

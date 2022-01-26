@@ -1,10 +1,12 @@
+import { useNavigate  } from 'react-router-dom';
 
-export const Survey = () => {
+export const Application = () => {
+    let navigate = useNavigate();
     return (
 
             <main> 
-                {/* <h1> Application</h1>
-                    <form>
+                 <h1> Application</h1> 
+                    {/* <form>
                     <Input
                         value='' float
                         modifier='material'
@@ -78,7 +80,7 @@ export const Survey = () => {
                     >
                         Submit
                     </Button>
-                    </form> */}
+                    </form> */} 
                 
             </main>
     );

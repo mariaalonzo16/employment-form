@@ -1,4 +1,4 @@
-import { Test2 } from "./Test2";
+import { Test2 } from "../Test2";
 
 export const Test1 = () => {
     return(
