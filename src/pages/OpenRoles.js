@@ -16,7 +16,7 @@ export const OpenRoles = () => {
                             }}
                             waves="light"
                             onClick={() => {
-                                navigate("/survey")
+                                navigate("/application")
                             }}
                         >
                             Nurse Practitioner

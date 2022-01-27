@@ -1,7 +1,17 @@
-import React from 'react';
+// import React, { useEffect } from 'react';
 
-export const Greetings = () => {
-    return (
-        <h1> GoodEvening </h1>
-    );
-}
+// export const Greetings = () => {
+  
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setCount('Timeout called!');
+//     }, 10);
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   return (
+//     <div>
+//       GoodMorning
+//     </div>
+//   );
+// };

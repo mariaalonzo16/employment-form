@@ -6,10 +6,6 @@ import { OpenRoles } from './pages/OpenRoles';
 import { Application } from './pages/Application';
 import { Confirmation } from './pages/Confirmation';
 
-
-
-
-
 export const App = () => {
   return (
     <>

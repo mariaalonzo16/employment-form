@@ -1,19 +1,25 @@
-import { Button } from 'react-materialize'
+import { Button, Footer } from 'react-materialize';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TopNav } from '../layouts/topNav/TopNav';
 
-
-
 export const Home = () => {
     let navigate = useNavigate();
+    // const myTimeout = setTimeout(myGreeting, 5000);
+
+   const myGreeting = () => {
+        document.getElementById("demo").innerHTML = "Happy Birthday!"
+      }
+      setTimeout(myGreeting, 1000)
+      
+    
     return (
             <>
                 <TopNav />
                 <main> 
                     
                     <div>
-                        <h1>GoodEvening!</h1> 
+                        <h1 id="demo">GoodEvening!</h1> 
 
                         <p>
                             Stay up-to-date with CodeHealth's  employment opportunities.
@@ -34,6 +40,7 @@ export const Home = () => {
                         
                     </div>
                 </main>
+                <Footer />
             </>
     );
 }

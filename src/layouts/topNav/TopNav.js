@@ -1,16 +1,12 @@
 import './TopNav.css';
 import React from 'react';
-import { NavItem, Navbar, Icon } from 'react-materialize';
-import { Home } from '../../pages/Home';
-
-
 
 export const TopNav = () => {
     const age = 23
     return ( 
         <>
             {age >= 23 ? (
-                <h1>David</h1>
+                <h1>TopNav</h1>
                 ) : (
                 <h1>Maria</h1>
                 ) 
