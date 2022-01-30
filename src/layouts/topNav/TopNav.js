@@ -1,25 +1,49 @@
 import './TopNav.css';
 import React from 'react';
+// import { Button, SideNav, SideNavItem, Icon } from 'react-materialize';
 
 export const TopNav = () => {
-    const age = 23
+    
     return ( 
-        <>
-            {age >= 23 ? (
-                <h1>TopNav</h1>
-                ) : (
-                <h1>Maria</h1>
-                ) 
-            }
-        </>
+        <>TopNav</>
+        // <div>
+        //     <SideNav
+        //         id="SideNav-31"
+        //         options={{
+        //         draggable: true
+        //         }}
+        //         trigger={<Button node="button">SIDE NAV DEMO</Button>}
+        //     >
+        //         <SideNavItem
+        //             user={{
+        //                 // background: 'https://placeimg.com/640/480/tech',
+        //                 email: 'jdandturk@gmail.com',
+        //                 image: 'static/media/react-materialize-logo.824c6ea3.svg',
+        //                 name: 'John Doe'
+        //             }}
+        //             userView
+        //         />
+        //         <SideNavItem
+        //             href=""
+        //             icon={<Icon>cloud</Icon>}
+        //         >
+        //             First Link With Icon
+        //         </SideNavItem>
+        //         <SideNavItem href="">
+        //             Second Link
+        //         </SideNavItem>
+        //         <SideNavItem divider />
+        //         <SideNavItem subheader>
+        //             Subheader
+        //         </SideNavItem>
+        //         <SideNavItem
+        //             href=""
+        //             waves
+        //         >
+        //             Third Link With Waves
+        //         </SideNavItem>
+        //     </SideNav>
+        //     </div>
     );
 }
 
-// const age = 19   (= is the assignment operator)
-// 5 == '5'  true (for the equality operator)
-// 5 == 5  true (for the equality operator)
-// 5 === '5' false (for the true equality operator)
-// 5 === 5 true (for the true equality operator)
-// 5 !== 5 false(for the non equlaity operator)
-// 5 !== 6 true (for the non equlaity operator)
-// ? means is whats to the left true?

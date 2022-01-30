@@ -12,7 +12,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/open-roles" element={<OpenRoles />} />
-        <Route path="/application" element={<Application />} />
+        <Route path="/application/*" element={<Application />} />
         <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
 

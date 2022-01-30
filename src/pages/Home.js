@@ -8,7 +8,7 @@ export const Home = () => {
     // const myTimeout = setTimeout(myGreeting, 5000);
 
    const myGreeting = () => {
-        document.getElementById("demo").innerHTML = "Happy Birthday!"
+        document.getElementById("demo").innerHTML = "Welcome to CodeHealth!"
       }
       setTimeout(myGreeting, 1000)
       
