@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom';
 export const OpenRoles = () => {
     let navigate = useNavigate();
     const openRole1 = 'Nurse Practitioner';
-    const openRole1Link = openRole1.replace(/\s/g, '-').toLowerCase();
+    const openRole1Link = openRole1.replace(/\s/g, '+').toLowerCase();
     const openRole2 = 'Physician Associate';
-    const openRole2Link = openRole2.replace(/\s/g, '-').toLowerCase();
+    const openRole2Link = openRole2.replace(/\s/g, '+').toLowerCase();
     const openRole3 = 'Registered Nurse';
-    const openRole3Link = openRole3.replace(/\s/g, '-').toLowerCase();
+    const openRole3Link = openRole3.replace(/\s/g, '+').toLowerCase();
 
     return (
             <main> 
@@ -23,7 +23,7 @@ export const OpenRoles = () => {
                             }}
                             waves="light"
                             onClick={() => {
-                                navigate(`/application/${openRole1Link}`)
+                                navigate(`/application?q=${openRole1Link}`)
                             }}
                         >
                             {openRole1}
@@ -36,10 +36,10 @@ export const OpenRoles = () => {
                             }}
                             waves="light"
                             onClick={() => {
-                                navigate(`/application/${openRole2Link}`)
+                                navigate(`/application?q=${openRole2Link}`)
                             }}
                         >
-                            Physician Associate
+                            {openRole2}
                         </Button>
                         <Button
                             node="button"
@@ -48,10 +48,10 @@ export const OpenRoles = () => {
                             }}
                             waves="light"
                             onClick={() => {
-                                navigate(`/application/${openRole3Link}`)
+                                navigate(`/application?q=${openRole3Link}`)
                             }}
                         >
-                            Registered Nurse
+                            {openRole3}
                         </Button>
 
                 </div>
