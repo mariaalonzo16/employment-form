@@ -1,49 +1,36 @@
 import './TopNav.css';
 import React from 'react';
-// import { Button, SideNav, SideNavItem, Icon } from 'react-materialize';
+import { Navbar, NavItem, Icon } from 'react-materialize';
 
 export const TopNav = () => {
     
     return ( 
-        <>TopNav</>
-        // <div>
-        //     <SideNav
-        //         id="SideNav-31"
-        //         options={{
-        //         draggable: true
-        //         }}
-        //         trigger={<Button node="button">SIDE NAV DEMO</Button>}
-        //     >
-        //         <SideNavItem
-        //             user={{
-        //                 // background: 'https://placeimg.com/640/480/tech',
-        //                 email: 'jdandturk@gmail.com',
-        //                 image: 'static/media/react-materialize-logo.824c6ea3.svg',
-        //                 name: 'John Doe'
-        //             }}
-        //             userView
-        //         />
-        //         <SideNavItem
-        //             href=""
-        //             icon={<Icon>cloud</Icon>}
-        //         >
-        //             First Link With Icon
-        //         </SideNavItem>
-        //         <SideNavItem href="">
-        //             Second Link
-        //         </SideNavItem>
-        //         <SideNavItem divider />
-        //         <SideNavItem subheader>
-        //             Subheader
-        //         </SideNavItem>
-        //         <SideNavItem
-        //             href=""
-        //             waves
-        //         >
-        //             Third Link With Waves
-        //         </SideNavItem>
-        //     </SideNav>
-        //     </div>
+        <>
+            <Navbar
+                alignLinks="right"
+                brand={<a className="brand-logo" href="#">Logo</a>}
+                id="mobile-nav"
+                menuIcon={<Icon>menu</Icon>}
+                options={{
+                    draggable: true,
+                    edge: 'left',
+                    inDuration: 250,
+                    onCloseEnd: null,
+                    onCloseStart: null,
+                    onOpenEnd: null,
+                    onOpenStart: null,
+                    outDuration: 200,
+                    preventScrolling: true
+                }}
+                >
+                <NavItem href="">
+                    Getting started
+                </NavItem>
+                <NavItem href="components.html">
+                    Components
+                </NavItem>
+            </Navbar>
+        </>
     );
 }
 

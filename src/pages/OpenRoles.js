@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button } from 'react-materialize';
+import { Button, Footer } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
+import { TopNav } from '../layouts/topNav/TopNav';
 
 export const OpenRoles = () => {
     let navigate = useNavigate();
@@ -12,7 +13,8 @@ export const OpenRoles = () => {
     const openRole3Link = openRole3.replace(/\s/g, '+').toLowerCase();
 
     return (
-            <main> 
+            <main>
+            <TopNav /> 
                 <h1>Page 2</h1>
                 <div>
                     <h1>Open Roles</h1>
@@ -52,8 +54,8 @@ export const OpenRoles = () => {
                             }}
                         >
                             {openRole3}
-                        </Button>
-
+                    </Button>
+                    <Footer />
                 </div>
                 
             </main>
