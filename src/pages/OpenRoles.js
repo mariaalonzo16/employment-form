@@ -13,8 +13,10 @@ export const OpenRoles = () => {
     const openRole3Link = openRole3.replace(/\s/g, '+').toLowerCase();
 
     return (
-            <main>
+        <>
             <TopNav /> 
+            <main>
+            
                 <h1>Page 2</h1>
                 <div>
                     <h1>Open Roles</h1>
@@ -55,9 +57,11 @@ export const OpenRoles = () => {
                         >
                             {openRole3}
                     </Button>
-                    <Footer />
+                    
                 </div>
                 
             </main>
+            <Footer />
+        </>
     );
 }

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Textarea, Checkbox, RadioGroup, Range, TextInput, Button, Footer } from 'react-materialize';
+import { Checkbox, RadioGroup, Range, TextInput, Button, Footer } from 'react-materialize';
 import { TopNav } from '../layouts/topNav/TopNav';
 
 
@@ -15,25 +15,28 @@ export const Application = () => {
     }
     const titleDisplay = jobTitle.join(" ");
     
+    
     return (
-
+        <>
+            <TopNav />
+            
             <main> 
-                <TopNav />
+                
                 <h1> {titleDisplay}</h1>
-                <Textarea
-                    id="Textarea-36"
+                <TextInput
+                    id="TextInput-32"
                     placeholder="First Name"
                 />
-                <Textarea
-                    id="Textarea-36"
+                <TextInput
+                    id="TextInput-32"
                     placeholder="Last Name"
                 />
-                <Textarea
-                    id="Textarea-36"
+                <TextInput
+                    id="TextInput-32"
                     placeholder="Email"
                 />
-                <Textarea
-                    id="Textarea-36"
+                <TextInput
+                    id="TextInput-32"
                     placeholder="Phone Number"
                 />
                 <p> Select the specialty you are interested in:</p>
@@ -108,8 +111,9 @@ export const Application = () => {
                 >
                     button
                 </Button>
-                <Footer />
-                
+   
             </main>
+            <Footer />
+        </>
     );
 }

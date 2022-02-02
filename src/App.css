@@ -4,3 +4,16 @@ body {
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
 }
+
+/* body {
+  display: inline-flex;
+  min-height: 100vh;
+  flex-direction: column;
+} */
+
+main {
+  flex: 1 0 auto;
+  display: inline-flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

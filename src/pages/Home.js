@@ -1,5 +1,5 @@
 import { Button, Footer } from 'react-materialize';
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TopNav } from '../layouts/topNav/TopNav';
 
@@ -7,11 +7,25 @@ export const Home = () => {
     let navigate = useNavigate();
     // const myTimeout = setTimeout(myGreeting, 5000);
 
+    const today = new Date()
+    const currentHour = today.getHours()
+
+    useEffect(() => {
+        if (currentHour < 12) {
+            document.getElementById("demo").innerHTML = "Good Morning!"
+        } else if (currentHour < 18) {
+            document.getElementById("demo").innerHTML = "Good Afternoon!"
+        } else {
+            document.getElementById("demo").innerHTML = "Good Evening!"
+        }
+    }, []);
+
+
+
    const myGreeting = () => {
         document.getElementById("demo").innerHTML = "Welcome to CodeHealth!"
-      }
-      setTimeout(myGreeting, 1000)
-      
+    }
+    setTimeout(myGreeting, 5000)
     
     return (
             <>
@@ -19,7 +33,7 @@ export const Home = () => {
                 <main> 
                     
                     <div>
-                        <h1 id="demo">GoodEvening!</h1> 
+                        <h1 id="demo">Greetings!</h1> 
 
                         <p>
                             Stay up-to-date with CodeHealth's  employment opportunities.
@@ -43,4 +57,5 @@ export const Home = () => {
                 <Footer />
             </>
     );
+    
 }

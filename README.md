@@ -1,0 +1,5 @@
+- materialize
+-conditional rendering 
+- react router
+- if/else statements
+-setTimeout
