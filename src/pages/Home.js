@@ -1,7 +1,8 @@
-import { Button, Footer } from 'react-materialize';
+import { Button } from 'react-materialize';
 import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TopNav } from '../layouts/topNav/TopNav';
+import { Footers } from '../layouts/footer/Footers';
 
 export const Home = () => {
     let navigate = useNavigate();
@@ -31,30 +32,26 @@ export const Home = () => {
             <>
                 <TopNav />
                 <main> 
-                    
-                    <div>
-                        <h1 id="demo">Greetings!</h1> 
+                    <h1 id="demo">Greetings!</h1> 
 
-                        <p>
-                            Stay up-to-date with CodeHealth's  employment opportunities.
-                        </p>
+                    <p>
+                        Stay up-to-date with CodeHealth's  employment opportunities.
+                    </p>
 
-                        <Button
-                            node="button"
-                            style={{
-                            marginRight: '5px'
-                            }}
-                            waves="light"
-                            onClick={() => {
-                                navigate("/open-roles")
-                            }}
-                        >
-                            Open Roles
-                        </Button>
-                        
-                    </div>
+                    <Button
+                        node="button"
+                        style={{
+                        marginRight: '5px'
+                        }}
+                        waves="light"
+                        onClick={() => {
+                            navigate("/open-roles")
+                        }}
+                    >
+                        Open Roles
+                    </Button>
                 </main>
-                <Footer />
+                <Footers />
             </>
     );
     

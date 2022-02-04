@@ -5,15 +5,22 @@ body {
       sans-serif;
 }
 
-/* body {
-  display: inline-flex;
-  min-height: 100vh;
-  flex-direction: column;
-} */
-
-main {
-  flex: 1 0 auto;
-  display: inline-flex;
+body {
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
+main {
+  flex: 1 0 auto;
+}
+
+
+#root {
+ height: 100vh
+};
+
+footer {
+  position: absolute ;
+  bottom: 0 ;
+};

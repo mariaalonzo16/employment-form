@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, Footer } from 'react-materialize';
+import { Button } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
+import { Footers } from '../layouts/footer/Footers';
 import { TopNav } from '../layouts/topNav/TopNav';
 
 export const OpenRoles = () => {
@@ -61,7 +62,7 @@ export const OpenRoles = () => {
                 </div>
                 
             </main>
-            <Footer />
+            <Footers />
         </>
     );
 }

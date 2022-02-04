@@ -5,10 +5,10 @@ import { Navbar, NavItem, Icon } from 'react-materialize';
 export const TopNav = () => {
     
     return ( 
-        <>
+        <header>
             <Navbar
                 alignLinks="right"
-                brand={<a className="brand-logo" href="#">Logo</a>}
+                brand={<a className="brand-logo" href="#">codeHealth</a>}
                 id="mobile-nav"
                 menuIcon={<Icon>menu</Icon>}
                 options={{
@@ -23,14 +23,13 @@ export const TopNav = () => {
                     preventScrolling: true
                 }}
                 >
-                <NavItem href="">
-                    Getting started
+                <NavItem href="../">
+                    Home
                 </NavItem>
-                <NavItem href="components.html">
-                    Components
+                <NavItem href="../open-roles">
+                    Open Roles
                 </NavItem>
             </Navbar>
-        </>
+        </header>
     );
 }
-
