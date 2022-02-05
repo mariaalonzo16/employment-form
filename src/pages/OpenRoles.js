@@ -20,19 +20,6 @@ export const OpenRoles = () => {
                 <div>
                     <h1>Open Roles</h1>
 
-                        {/* <Button
-                            node="button"
-                            style={{
-                            marginRight: '5px'
-                            }}
-                            waves="light"
-                            onClick={() => {
-                                navigate(`/application?q=${openRole3Link}`)
-                            }}
-                        >
-                            {openRole3}
-                    </Button> */}
-
                     <Collapsible accordion>
                         <CollapsibleItem
                             expanded={false}
@@ -46,6 +33,7 @@ export const OpenRoles = () => {
 
                             <Button
                                 node="button"
+                                className='button'
                                 style={{
                                 marginRight: '5px'
                                 }}
@@ -68,6 +56,7 @@ export const OpenRoles = () => {
                             <p> - Give treatment, such as setting broken bones and immunizing patients.</p> 
                             <Button
                                 node="button"
+                                className='button'
                                 style={{
                                 marginRight: '5px'
                                 }}
@@ -90,6 +79,7 @@ export const OpenRoles = () => {
                             <p> - Consult with supervisors and doctors to decide on the best treatment plan for patients</p> 
                             <Button
                                 node="button"
+                                className='button'
                                 style={{
                                 marginRight: '5px'
                                 }}
@@ -107,7 +97,7 @@ export const OpenRoles = () => {
                 </div>
                 
             </main>
-            {/* <Footers /> */}
+            <Footers />
         </>
     );
 }

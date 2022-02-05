@@ -3,7 +3,6 @@ import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { Button, Modal } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
-import { App } from '../App';
 
 export const Confirmation = (props) => {
     let navigate = useNavigate();
@@ -14,9 +13,9 @@ export const Confirmation = (props) => {
     // }
 
     // document.getElementById("confirm").addEventListener("click", homeRedirect);
-    function homeRedirect() {
-        console.log("success")
-    }
+    // function homeRedirect() {
+    //     console.log("success")
+    // }
 
     
 
@@ -88,7 +87,7 @@ export const Confirmation = (props) => {
                     </p>
                 </Modal>
             </main>
-            {/* <Footers /> */}
+            <Footers />
             
         </>
     );

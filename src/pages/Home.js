@@ -19,7 +19,7 @@ export const Home = () => {
         } else {
             document.getElementById("demo").innerHTML = "Good Evening!"
         }
-    }, []);
+    },);
 
    const myGreeting = () => {
         document.getElementById("demo").innerHTML = "Welcome to CodeHealth!"
@@ -37,6 +37,7 @@ export const Home = () => {
                     </p>
 
                     <Button
+                        className='button'
                         node="button"
                         style={{
                         marginRight: '5px'

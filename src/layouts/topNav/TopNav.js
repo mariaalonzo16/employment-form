@@ -8,9 +8,10 @@ export const TopNav = () => {
         <header>
             <Navbar
                 alignLinks="right"
-                brand={<a className="brand-logo" href="#">codeHealth</a>}
+                brand={<a className="brand-logo">codeHealth</a>}
                 id="mobile-nav"
                 menuIcon={<Icon>menu</Icon>}
+                className='Navbar'
                 options={{
                     draggable: true,
                     edge: 'left',

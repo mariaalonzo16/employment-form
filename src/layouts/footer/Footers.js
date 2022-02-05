@@ -6,7 +6,7 @@ import { Footer } from 'react-materialize';
 
 export const Footers = () => {
     return (
-        <Footer>
+        <Footer className="footer">
             <h5 className="white-text">
                 Footer Content
             </h5>
