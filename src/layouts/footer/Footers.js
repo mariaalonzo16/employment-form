@@ -1,4 +1,4 @@
-import "./Footers.css";
+import "./Footers.scss";
 import React from 'react';
 import { Footer } from 'react-materialize';
 

@@ -1,13 +1,25 @@
 import React from 'react';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
-import { Button } from 'react-materialize';
+import { Button, Modal } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
 import { App } from '../App';
 
 export const Confirmation = (props) => {
     let navigate = useNavigate();
     console.log(props)
+
+    // const homeRedirect = () => {
+    //     console.log("success")
+    // }
+
+    // document.getElementById("confirm").addEventListener("click", homeRedirect);
+    function homeRedirect() {
+        console.log("success")
+    }
+
+    
+
     return (
         <>
             <TopNav />
@@ -36,6 +48,45 @@ export const Confirmation = (props) => {
                 >
                     Confirm
                 </Button>
+
+                <Modal
+                    actions={[
+                        <Button flat modal="close" node="button" waves="green">Close</Button>
+                    ]}
+                    bottomSheet={false}
+                    fixedFooter={false}
+                    header="Modal Header"
+                    id="Modal-10"
+                    open={false}
+                    options={{
+                        dismissible: true,
+                        endingTop: '10%',
+                        inDuration: 250,
+                        onCloseEnd: null,
+                        onCloseStart: null,
+                        onOpenEnd: null,
+                        onOpenStart: null,
+                        opacity: 0.5,
+                        outDuration: 250,
+                        preventScrolling: true,
+                        startingTop: '4%'
+                    }}
+                    //   root={[object HTMLBodyElement]}
+                    trigger={
+                        <Button 
+                            node="button"
+                            // onClick={homeRedirect}
+                            id="confirm"
+                        >
+                            Tommy
+                        </Button>
+                    }
+                >
+                    
+                    <p>
+                       Thank You for your Submission!
+                    </p>
+                </Modal>
             </main>
             {/* <Footers /> */}
             

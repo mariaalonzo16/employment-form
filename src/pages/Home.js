@@ -21,8 +21,6 @@ export const Home = () => {
         }
     }, []);
 
-
-
    const myGreeting = () => {
         document.getElementById("demo").innerHTML = "Welcome to CodeHealth!"
     }
