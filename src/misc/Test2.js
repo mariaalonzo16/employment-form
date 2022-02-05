@@ -1,7 +1,7 @@
 import { Test3 } from "./Test3";
 
 export const Test2 = (props) => {
-    // console.log(props)
+    console.log(props)
     // console.log(props.candy || 'Maria')
     return ( 
         <>
