@@ -7,16 +7,6 @@ import { useNavigate } from 'react-router-dom';
 export const Confirmation = (props) => {
     let navigate = useNavigate();
     console.log(props)
-
-    // const homeRedirect = () => {
-    //     console.log("success")
-    // }
-
-    // document.getElementById("confirm").addEventListener("click", homeRedirect);
-    // function homeRedirect() {
-    //     console.log("success")
-    // }
-
     
 
     return (
@@ -70,15 +60,17 @@ export const Confirmation = (props) => {
                         preventScrolling: true,
                         startingTop: '4%'
                     }}
-                    //   root={[object HTMLBodyElement]}
+                    // root={[object HTMLBodyElement]}
                     trigger={
-                        <Button 
-                            node="button"
-                            // onClick={homeRedirect}
-                            id="confirm"
-                        >
-                            Tommy
-                        </Button>
+                        <div id="confirm">
+                            <Button 
+                             
+                                // onClick={homeRedirect}
+                                
+                            >
+                                Tommy
+                            </Button>
+                        </div>
                     }
                 >
                     

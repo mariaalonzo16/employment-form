@@ -22,18 +22,18 @@ export const Home = () => {
     },);
 
    const myGreeting = () => {
-        document.getElementById("demo").innerHTML = "Welcome to CodeHealth!"
+        document.getElementById("demo").innerHTML = "Welcome to codeHealth!"
     }
-    setTimeout(myGreeting, 5000)
+    setTimeout(myGreeting, 2000)
     
     return (
             <>
                 <TopNav />
                 <main> 
-                    <h1 id="demo">Greetings!</h1> 
+                    <h1 id="demo" className='heading'>Greetings! </h1> 
 
-                    <p>
-                        Stay up-to-date with CodeHealth's  employment opportunities.
+                    <p className='welcome'>
+                        Stay up-to-date with CodeHealth's  employment opportunities. 
                     </p>
 
                     <Button

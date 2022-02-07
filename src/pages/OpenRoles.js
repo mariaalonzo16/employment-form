@@ -18,18 +18,37 @@ export const OpenRoles = () => {
             <TopNav /> 
             <main>
                 <div>
-                    <h1>Open Roles</h1>
+                    <h1 className='heading'>Open Roles</h1>
 
                     <Collapsible accordion>
                         <CollapsibleItem
                             expanded={false}
                             header={openRole1}
-                            icon={<Icon>filter_drama</Icon>}
                             node="div"
                         >
-                            <p> - Order, perform and interpret diagnostic tests such as lab work and x-rays.</p>
-                            <p> - Diagnosing and treating acute and chronic conditions such as diabetes, high blood pressure, infections and injuries.</p>
-                            <p> - Prescribing medications and other treatments.</p>
+                            <p className='subtitle'> Job Description: </p>
+                            <p> codeHealth is a private practice seeking a full-time Nurse Practitioner (NP) to work with our physicians in our Oncology department in the Raleigh Location. 
+                            We offer competitive salary and full benefits package including 401(k), and health insurance. The NP will work under the supervision of one of the physicians at codeHealth. 
+                            The provider will see up to 17 patients per day with the clinical support of a nurse and medical assistant.
+                            </p>
+                            <p>Primary hours will be Monday-Friday, 8am-5pm</p>
+                            <p>No call or weekends</p>
+                            
+                            <p className='subtitle'> Requirements: </p>
+                            <p> Active licensure from the NC Board of Nursing or NC Medical Board</p>
+                            <p> 1+ Years of Oncology Specialty Experience is preferred</p>
+                            <p className='subtitle'> Job Type: </p>
+                            <p> Full Time</p>
+                            <p className='subtitle'> Salary: </p>
+                            <p> 80k - 110k per year </p>
+                            <p className='subtitle'> Benefits: </p>
+                            <p> 401(k) </p>
+                            <p> Dental insurance </p>
+                            <p> Health insurance </p>
+                            <p> Life insurance</p>
+                            <p> Paid time off </p>
+                            <p> Retirement plan</p>
+                            
 
                             <Button
                                 node="button"
@@ -48,12 +67,29 @@ export const OpenRoles = () => {
                         <CollapsibleItem
                             expanded={false}
                             header={openRole2}
-                            icon={<Icon>place</Icon>}
                             node="div"
                         >
-                            <p> - Take or review patients' medical histories.</p>
-                            <p> - Order and interpret diagnostic tests, such as x rays or blood tests.</p>
-                            <p> - Give treatment, such as setting broken bones and immunizing patients.</p> 
+                            <p className='subtitle'> Job Description: </p>
+                            <p> 
+                            codeHealth is a private practice seeking a full-time Nurse Practitioner (NP) to work with our physicians in our Oncology department in the Raleigh Location. 
+                            We offer competitive salary and full benefits package including 401(k), and health insurance. The NP will work under the supervision of one of the physicians at codeHealth. 
+                            The provider will see up to 17 patients per day with the clinical support of a nurse and medical assistant.
+                            </p>
+                            <p>Primary hours will be Monday-Friday, 8am-5pm</p>
+                            <p>No call or weekends</p>
+                            
+                            <p className='subtitle'> Requirements: </p>
+                            <p> Active licensure from the NC Board of Nursing or NC Medical Board</p>
+                            <p> 1+ Years of Oncology Specialty Experience is preferred</p>
+                            <p className='subtitle'> Job Type: </p>
+                            <p> Full Time</p>
+                            <p className='subtitle'> Benefits: </p>
+                            <p> 401(k) </p>
+                            <p> Dental insurance </p>
+                            <p> Health insurance </p>
+                            <p> Life insurance</p>
+                            <p> Paid time off </p>
+                            <p> Retirement plan</p> 
                             <Button
                                 node="button"
                                 className='button'
@@ -71,7 +107,6 @@ export const OpenRoles = () => {
                         <CollapsibleItem
                             expanded={false}
                             header={openRole3}
-                            icon={<Icon>whatshot</Icon>}
                             node="div"
                         >
                             <p> - Administer medication, change wound dressings and care for other treatment options</p>
