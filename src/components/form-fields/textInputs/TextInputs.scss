@@ -1,0 +1,11 @@
+@use '../../../styles/colors/color.scss' as *;
+
+.text-input{
+    text-align: center;
+}
+
+.text-input:focus {
+    border-bottom: 1px solid $text-input !important;
+    -webkit-box-shadow: 0 1px 0 0 $text-input;
+    box-shadow: 0 1px 0 0 $text-input !important;
+}

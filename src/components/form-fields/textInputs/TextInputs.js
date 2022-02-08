@@ -1,4 +1,5 @@
 import { TextInput } from 'react-materialize';
+import './TextInputs.scss';
 
 export const TextInputs = () => {
     return (
@@ -10,6 +11,7 @@ export const TextInputs = () => {
                     minLength="2"
                     maxLength="15"
                     error="Please input your first name"
+                    className= "text-input"
                 />
                 <TextInput
                     id="TextInput-32"
@@ -18,6 +20,7 @@ export const TextInputs = () => {
                     minLength="2"
                     maxLength="15"
                     error="Please input your last name"
+                    className= "text-input"
                 />
                 <TextInput
                     id="TextInput-43"
@@ -25,6 +28,7 @@ export const TextInputs = () => {
                     error="Please input your email"
                     placeholder="Email"
                     validate
+                    className= "text-input"
                 />
                 <TextInput
                     id="TextInput-32"
@@ -34,6 +38,7 @@ export const TextInputs = () => {
                     maxLength="10"
                     minLength="2"
                     error="Please input your phone number"
+                    className= "text-input"
                 />
         </>
     );

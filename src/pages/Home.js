@@ -33,7 +33,7 @@ export const Home = () => {
                     <h1 id="demo" className='heading'>Greetings! </h1> 
 
                     <p className='welcome'>
-                        Stay up-to-date with CodeHealth's  employment opportunities. 
+                        Stay up-to-date with codeHealth's  employment opportunities. 
                     </p>
 
                     <Button

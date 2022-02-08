@@ -24,7 +24,7 @@ export const Application = () => {
             
             <main> 
                 
-                <h1> {titleDisplay}</h1>
+                <h1 className='heading'> {titleDisplay}</h1>
                 <TextInputs />
                 <CheckBoxes />
                 <RadioGroups />
