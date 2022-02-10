@@ -7,7 +7,7 @@ export const Buttons = () => {
     return (
         <>
             <Button
-                className='button'
+                className='buttons'
                 node="button"
                 waves="light"
                 onClick={() => {

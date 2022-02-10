@@ -1,0 +1,18 @@
+@use '../../../styles/colors/color.scss' as *;
+
+.btn {
+    background-color: $button;
+    width: 100%;
+}
+
+.btn:focus {
+    background-color: $button;
+}
+
+.btn:hover {
+    background-color: $button;
+}
+
+span.thumb.active{
+    background-color: purple;
+}
