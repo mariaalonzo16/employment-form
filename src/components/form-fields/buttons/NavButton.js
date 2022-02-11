@@ -2,23 +2,26 @@ import { Button } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
 import './Buttons.scss';
 
-export const Buttons = () => {
+export const NavButton = (props) => {
+
+    console.log(props)
+
     let navigate = useNavigate();
     return (
         <>
-            
-
-
             <Button
-                className='buttons'
+                className='button'
                 node="button"
+                style={{
+                marginRight: '5px'
+                }}
                 waves="light"
                 onClick={() => {
-                    navigate("/open-roles")
+                    navigate(`${props.route}`)
                 }}
             >
-                Submit
-             </Button>
+                {props.innerText}
+            </Button>
         </>
     );
 }

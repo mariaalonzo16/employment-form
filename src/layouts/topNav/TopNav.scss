@@ -1,3 +1,5 @@
+@use '../../styles/colors/color.scss' as *;
+
 .Navbar {
-    background-color: rgb(127, 178, 255);
+    background-color: $layout;
 }

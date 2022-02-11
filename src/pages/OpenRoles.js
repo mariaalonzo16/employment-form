@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Collapsible, CollapsibleItem } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
+import {  NavButton } from '../components/form-fields/buttons/NavButton';
 import { Footers } from '../layouts/footer/Footers';
 import { TopNav } from '../layouts/topNav/TopNav';
 
@@ -19,6 +20,11 @@ export const OpenRoles = () => {
             <main>
                 <div>
                     <h1 className='heading'>Open Roles</h1>
+
+                    {/* <NavButton 
+                        innerText="Apply Now"
+                        route={"application?q=" + openRole1Link}
+                    /> */}
 
                     <Collapsible accordion>
                         <CollapsibleItem
@@ -50,7 +56,7 @@ export const OpenRoles = () => {
                             <p> Retirement plan</p>
                             
 
-                            <Button
+                            {/* <Button
                                 node="button"
                                 className='button'
                                 style={{
@@ -62,7 +68,14 @@ export const OpenRoles = () => {
                                 }}
                             >
                                 Apply Now
-                            </Button>       
+                            </Button>   */}
+
+                            <NavButton 
+                                innerText="Apply Now"
+                                route={"/application?q=" + openRole1Link}
+                            />
+
+
                         </CollapsibleItem>
                         <CollapsibleItem
                             expanded={false}
@@ -101,7 +114,7 @@ export const OpenRoles = () => {
                                 }}
                                 waves="light"
                                 onClick={() => {
-                                    navigate(`/application?q=${openRole2Link}`)
+                                    navigate(`/application?q=${openRole1Link}`)
                                 }}
                             >
                                 Apply Now

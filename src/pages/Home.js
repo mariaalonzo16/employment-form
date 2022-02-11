@@ -3,6 +3,7 @@ import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
+import { NavButton } from '../components/form-fields/buttons/NavButton';
 
 export const Home = () => {
     let navigate = useNavigate();
@@ -36,7 +37,7 @@ export const Home = () => {
                         Stay up-to-date with codeHealth's  employment opportunities. 
                     </p>
 
-                    <Button
+                    {/* <Button
                         className='button'
                         node="button"
                         style={{
@@ -48,7 +49,15 @@ export const Home = () => {
                         }}
                     >
                         Open Roles
-                    </Button>
+                    </Button> */}
+
+                    <NavButton
+                        innerText="Open Roles"
+                        route="/open-roles"
+
+                    />
+
+
                 </main>
                 <Footers />
             </>

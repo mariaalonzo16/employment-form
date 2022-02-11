@@ -1,5 +1,6 @@
+@use '../../styles/colors/color.scss' as *;
 .footer {
-    background-color: rgb(127, 178, 255);
+    background-color: $layout;
     flex-shrink: 0;
 }
 
