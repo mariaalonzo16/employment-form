@@ -14,7 +14,7 @@ export const Buttons = () => {
                 node="button"
                 waves="light"
                 onClick={() => {
-                    navigate("/open-roles")
+                    navigate("/confirmation")
                 }}
             >
                 Submit

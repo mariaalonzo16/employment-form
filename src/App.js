@@ -1,12 +1,12 @@
 import './App.scss';
 import { Home } from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
-import React from 'react';
+import React, { createContext, useContext, useState }from 'react';
 import { OpenRoles } from './pages/OpenRoles';
 import { Application } from './pages/Application';
 import { Confirmation } from './pages/Confirmation';
-import { Test1 } from './misc/Test1';
 
+export const FormContext = createContext();
 
 export const App = () => {
 
@@ -22,12 +22,31 @@ export const App = () => {
   const radio = "radio value";
   const range = "range value";
   const fileInput = "file value";
+
+
+ const formValues = {
+   firstName: '',
+   lastName: '',
+  }
+ 
+
+  const [ formState,setFormState ] = useState(formValues)
+  console.log("APP FORM STATE: ")
+  console.log(formValues.firstName)
+  console.log(formValues.lastName)
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/open-roles" element={<OpenRoles />} />
-        <Route path="/application/*" element={<Application />} />
+        <Route path="/application/*" element={
+
+          <FormContext.Provider value={{formState, setFormState}}>
+            <Application />
+          </FormContext.Provider>
+          
+          
+          } />
         <Route 
           path="/confirmation" 
           element={

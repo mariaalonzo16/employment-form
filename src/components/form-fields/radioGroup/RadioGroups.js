@@ -4,7 +4,7 @@ import './RadioGroups.scss';
 export const RadioGroups = () => {
     return(
         <>
-            <p>For how many years have you been practicing medicine?</p>
+            <p className='number-years'>For how many years have you been practicing medicine?</p>
             <span className='radio-group'>
             <RadioGroup
                 label="Years of Practice"

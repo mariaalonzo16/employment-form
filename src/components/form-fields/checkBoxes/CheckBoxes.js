@@ -4,7 +4,7 @@ import './CheckBoxes.scss';
 export const CheckBoxes = () => {
     return (
         <>
-            <p> Select a specialty you have previously worked in:</p>
+            <p className='specialty'> Select a specialty you have previously worked in:</p>
             <span>
                 <span className='checkbox'>
                     <Checkbox

@@ -4,7 +4,7 @@ import './Range.scss';
 export const Ranges = () => {
     return (
         <>
-            <p>Select desired yearly income:</p>
+            <p className='yearly-income'>Select desired yearly income:</p>
             <Range
                 max="140000"
                 min="60000"

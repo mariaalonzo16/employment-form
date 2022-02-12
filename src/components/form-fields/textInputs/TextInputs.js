@@ -1,7 +1,17 @@
 import { TextInput } from 'react-materialize';
+import React, { createContext, useContext }from 'react';
 import './TextInputs.scss';
+import { FormContext } from '../../../App';
 
 export const TextInputs = () => {
+
+    // const [firstName, setFirstName] = useContext(FormContext)
+    const { formState, setFormState } = useContext(FormContext)
+    console.log(formState)
+    console.log(formState.firstName)
+    console.log(formState.lastName)
+    console.log("FIRST NAME: " + formState)
+
     return (
         <>
             <TextInput
@@ -12,6 +22,8 @@ export const TextInputs = () => {
                     maxLength="15"
                     error="Please input your first name"
                     className= "text-input"
+                    value={formState.firstName} 
+                    onChange={e => setFormState(e.target.value)} 
                 />
                 <TextInput
                     id="TextInput-32"
@@ -21,6 +33,8 @@ export const TextInputs = () => {
                     maxLength="15"
                     error="Please input your last name"
                     className= "text-input"
+                    value={formState.lastName} 
+                    onChange={e => setFormState(e.target.value)} 
                 />
                 <TextInput
                     id="TextInput-43"
