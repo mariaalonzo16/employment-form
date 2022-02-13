@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import {  NavButton } from '../components/form-fields/buttons/NavButton';
 import { Footers } from '../layouts/footer/Footers';
 import { TopNav } from '../layouts/topNav/TopNav';
+import { Roles } from '../data/Roles';
 
 export const OpenRoles = () => {
     let navigate = useNavigate();
@@ -14,6 +15,9 @@ export const OpenRoles = () => {
     const openRole3 = 'Registered Nurse';
     const openRole3Link = openRole3.replace(/\s/g, '+').toLowerCase();
 
+    console.log(Roles)
+    console.log(Roles[1].title)
+
     return (
         <>
             <TopNav /> 
@@ -21,10 +25,88 @@ export const OpenRoles = () => {
                 <div>
                     <h1 className='heading'>Open Roles</h1>
 
-                    {/* <NavButton 
-                        innerText="Apply Now"
-                        route={"application?q=" + openRole1Link}
-                    /> */}
+                    <Collapsible accordion>
+                        {Roles.map((role) => (
+                            <CollapsibleItem
+                            expanded={false}
+                            header={role.title}
+                            node="div"
+                        >
+                            <p className='subtitle'> Job Description: </p>
+                            <p> {role.p1}
+                            </p>
+                            <p>Primary hours will be Monday-Friday, 8am-5pm</p>
+                            <p>No call or weekends</p>
+                            
+                            <p className='subtitle'> Requirements: </p>
+                            <p> Active licensure from the NC Board of Nursing or NC Medical Board</p>
+                            <p> 1+ Years of Oncology Specialty Experience is preferred</p>
+                            <p className='subtitle'> Job Type: </p>
+                            <p> Full Time</p>
+                            <p className='subtitle'> Salary: </p>
+                            <p> 80k - 110k per year </p>
+                            <p className='subtitle'> Benefits: </p>
+                            <p> 401(k) </p>
+                            <p> Dental insurance </p>
+                            <p> Health insurance </p>
+                            <p> Life insurance</p>
+                            <p> Paid time off </p>
+                            <p> Retirement plan</p>
+
+                            <NavButton 
+                                innerText="Apply Now"
+                                route={"/application?q=" + openRole1Link}
+                            />
+
+
+                        </CollapsibleItem>
+                        ))}
+                    </Collapsible>
+
+
+
+
+
+
+
+
+                    {/* <Collapsible accordion>
+                        <CollapsibleItem
+                            expanded={false}
+                            header={openRole1}
+                            node="div"
+                        >
+                            <p className='subtitle'> Job Description: </p>
+                            <p> codeHealth is a private practice seeking a full-time Nurse Practitioner (NP) to work with our physicians in our Oncology department in the Raleigh Location. 
+                            We offer competitive salary and full benefits package including 401(k), and health insurance. The NP will work under the supervision of one of the physicians at codeHealth. 
+                            The provider will see up to 17 patients per day with the clinical support of a nurse and medical assistant.
+                            </p>
+                            <p>Primary hours will be Monday-Friday, 8am-5pm</p>
+                            <p>No call or weekends</p>
+                            
+                            <p className='subtitle'> Requirements: </p>
+                            <p> Active licensure from the NC Board of Nursing or NC Medical Board</p>
+                            <p> 1+ Years of Oncology Specialty Experience is preferred</p>
+                            <p className='subtitle'> Job Type: </p>
+                            <p> Full Time</p>
+                            <p className='subtitle'> Salary: </p>
+                            <p> 80k - 110k per year </p>
+                            <p className='subtitle'> Benefits: </p>
+                            <p> 401(k) </p>
+                            <p> Dental insurance </p>
+                            <p> Health insurance </p>
+                            <p> Life insurance</p>
+                            <p> Paid time off </p>
+                            <p> Retirement plan</p>
+
+                            <NavButton 
+                                innerText="Apply Now"
+                                route={"/application?q=" + openRole1Link}
+                            />
+
+
+                        </CollapsibleItem>
+                    </Collapsible>
 
                     <Collapsible accordion>
                         <CollapsibleItem
@@ -54,21 +136,6 @@ export const OpenRoles = () => {
                             <p> Life insurance</p>
                             <p> Paid time off </p>
                             <p> Retirement plan</p>
-                            
-
-                            {/* <Button
-                                node="button"
-                                className='button'
-                                style={{
-                                marginRight: '5px'
-                                }}
-                                waves="light"
-                                onClick={() => {
-                                    navigate(`/application?q=${openRole1Link}`)
-                                }}
-                            >
-                                Apply Now
-                            </Button>   */}
 
                             <NavButton 
                                 innerText="Apply Now"
@@ -165,7 +232,7 @@ export const OpenRoles = () => {
                             </Button>
 
                         </CollapsibleItem>
-                    </Collapsible>
+                    </Collapsible> */}
                     
                 </div>
                 
