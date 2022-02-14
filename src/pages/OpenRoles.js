@@ -35,12 +35,12 @@ export const OpenRoles = () => {
                             <p className='subtitle'> Job Description: </p>
                             <p> {role.p1}
                             </p>
-                            <p>Primary hours will be Monday-Friday, 8am-5pm</p>
-                            <p>No call or weekends</p>
+                            <p>{role.p2}</p>
+                            <p>{role.p3}</p>
                             
-                            <p className='subtitle'> Requirements: </p>
-                            <p> Active licensure from the NC Board of Nursing or NC Medical Board</p>
-                            <p> 1+ Years of Oncology Specialty Experience is preferred</p>
+                            <p className='subtitle'> {role.p4} </p>
+                            <p> {role.p5}</p>
+                            <p> {role.p6}</p>
                             <p className='subtitle'> Job Type: </p>
                             <p> Full Time</p>
                             <p className='subtitle'> Salary: </p>
