@@ -1,5 +1,5 @@
 import { TextInput } from 'react-materialize';
-import React, { createContext, useContext }from 'react';
+import React, { createContext, useContext, useState }from 'react';
 import './TextInputs.scss';
 import { FormContext } from '../../../App';
 
@@ -12,8 +12,26 @@ export const TextInputs = () => {
     console.log(formState.lastName)
     console.log("FIRST NAME: " + formState)
 
+    const [inputTest, setInputTest] = useState(0)
+
+    const handleTest = () => {
+        console.log("hurraay")
+    }
+
     return (
         <>
+<TextInput
+                    id="TextInput-32"
+                    placeholder="..."
+                    validate
+                    minLength="2"
+                    maxLength="15"
+                    error="Please input your first name"
+                    className= "text-input"
+                    value={ inputTest }
+                    onChange={handleTest}
+                />
+
             <TextInput
                     id="TextInput-32"
                     placeholder="First Name"
