@@ -1,17 +1,28 @@
 export const Roles = [
     {
         title: "Nurse Practitioner",
-        p1: "codeHealth is a private practice seeking a full-time Nurse Practitioner (NP)"+ 
-            "to work with our physicians in our Oncology department in the Raleigh Location."+
-            "We offer competitive salary and full benefits package including 401(k), and"+
-            "health insurance. The NP will work under the supervision of one of the physicians"+
-            "at codeHealth. The provider will see up to 17 patients per day with the clinical"+
-            "support of a nurse and medical assistant.",
+        p1: "codeHealth is a private practice seeking a full-time Nurse Practitioner (NP)" + 
+            " to work with our physicians in our Oncology department in the Raleigh Location."+
+            " We offer competitive salary and full benefits package including 401(k), and"+
+            " health insurance. The NP will work under the supervision of one of the physicians"+
+            " at codeHealth. The provider will see up to 17 patients per day with the clinical"+
+            " support of a nurse and medical assistant.",
         p2: "Primary hours will be Monday-Friday, 8am-5pm",
         p3: "No call or weekends",
         p4: "Requirements:",
         p5: "Active licensure from the NC Board of Nursing or NC Medical Board",
         p6: "1+ Years of Oncology Specialty Experience is preferred",
+        p7: "Job Type:",
+        p8: "Full Time",
+        p9: "Salary:",
+        p10: "80k - 110k per year",
+        p11: "Benefits:",
+        p12: "401(k)",
+        p13: "Dental insurance",
+        p14: "Health insurance",
+        p15: "Life insurance",
+        p16: "Paid time off",
+        p17: "Retirement plan",
     },
     {
         title: "Physician Associate",
@@ -25,6 +36,17 @@ export const Roles = [
         p4: "Requirements:",
         p5: "Active Physician Associate License",
         p6: "EMR systems: 1 year of experience",
+        p7: "Job Type:",
+        p8: "Full Time",
+        p9: "Salary:",
+        p10: "85k - 110k per year",
+        p11: "Benefits:",
+        p12: "401(k)",
+        p13: "Dental insurance",
+        p14: "Health insurance",
+        p15: "Life insurance",
+        p16: "Paid time off",
+        p17: "Retirement plan",
     },
     {
         title: "Registered Nurse",
@@ -40,5 +62,16 @@ export const Roles = [
         p5: "Current, unrestricted RN license in state of North Carolina",
         p6: "Experience in acute, long term care, acute rehabilitation, or skilled nursing facilities" +
             "Proficiency in computer skills - Windows, Excel, Outlook, and clinical platforms",
+        p7: "Job Type:",
+        p8: "Full Time",
+        p9: "Salary:",
+        p10: "104k - 120k per year",
+        p11: "Benefits:",
+        p12: "401(k)",
+        p13: "Dental insurance",
+        p14: "Health insurance",
+        p15: "Life insurance",
+        p16: "Paid time off",
+        p17: "Retirement plan",
     }
 ]

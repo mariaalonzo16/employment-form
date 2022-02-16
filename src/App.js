@@ -5,8 +5,9 @@ import React, { createContext, useContext, useState }from 'react';
 import { OpenRoles } from './pages/OpenRoles';
 import { Application } from './pages/Application';
 import { Confirmation } from './pages/Confirmation';
+import { FormContext } from './context/FormContext';
 
-export const FormContext = createContext();
+
 
 export const App = () => {
 
@@ -31,9 +32,7 @@ export const App = () => {
  
 
   const [ formState,setFormState ] = useState(formValues)
-  console.log("APP FORM STATE: ")
-  console.log(formValues.firstName)
-  console.log(formValues.lastName)
+
   return (
     <>
       <Routes>
@@ -41,7 +40,7 @@ export const App = () => {
         <Route path="/open-roles" element={<OpenRoles />} />
         <Route path="/application/*" element={
 
-          <FormContext.Provider value={{formState, setFormState}}>
+          <FormContext.Provider value={[formState, setFormState]}>
             <Application />
           </FormContext.Provider>
           

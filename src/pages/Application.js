@@ -8,6 +8,7 @@ import { Buttons } from '../components/form-fields/buttons/Buttons';
 import { Footers } from '../layouts/footer/Footers';
 
 
+
 export const Application = () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -17,6 +18,7 @@ export const Application = () => {
         jobTitle[i] = jobTitle[i].charAt(0).toUpperCase() + jobTitle[i].slice(1);
     }
     const titleDisplay = jobTitle.join(" ");
+
 
     return (
         <>
