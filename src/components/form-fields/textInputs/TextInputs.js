@@ -1,6 +1,7 @@
 import { TextInput } from 'react-materialize';
 import React, { createContext, useContext, useState }from 'react';
 import './TextInputs.scss';
+import { FormContext } from '../../../context/FormContext';
 
 
 export const TextInputs = () => {
@@ -10,6 +11,9 @@ export const TextInputs = () => {
     const handleTest = () => {
         console.log("hurraay")
     }
+
+    const currency = React.useContext(FormContext);
+    console.log(currency)
 
     return (
         <>
