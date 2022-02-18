@@ -6,7 +6,7 @@ import { FormContext } from '../../../context/FormContext';
 
 export const TextInputs = () => {
 
-    const [inputTest, setInputTest] = useState(0)
+    const [inputTest, setInputTest] = useState("");
 
     const handleTest = () => {
         console.log("hurraay")
@@ -14,6 +14,8 @@ export const TextInputs = () => {
 
     const currency = React.useContext(FormContext);
     console.log(currency)
+
+    
 
     return (
         <>

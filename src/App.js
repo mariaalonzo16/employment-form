@@ -31,10 +31,10 @@ export const App = () => {
   }
  
 
-  const [ formState,setFormState ] = useState(formValues)
+  const [ formState,setFormState ] = useState("")
 
   return (
-    <FormContext.Provider value="maria">
+    <FormContext.Provider value={{formState, setFormState}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/open-roles" element={<OpenRoles />} />
