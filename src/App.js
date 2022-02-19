@@ -9,6 +9,8 @@ import { FormContext } from './context/FormContext';
 
 
 
+
+
 export const App = () => {
 
   const firstName = "Mark";
@@ -31,7 +33,10 @@ export const App = () => {
   }
  
 
-  const [ formState,setFormState ] = useState("")
+  const [ formState,setFormState ] = useState("david")
+
+  
+  
 
   return (
     <FormContext.Provider value={{formState, setFormState}}>
@@ -59,6 +64,7 @@ export const App = () => {
             />}  
         />
       </Routes>
+
 
       {/* <Test1 /> */}
     </FormContext.Provider>

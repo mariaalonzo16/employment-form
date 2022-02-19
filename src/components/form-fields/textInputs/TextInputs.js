@@ -6,14 +6,16 @@ import { FormContext } from '../../../context/FormContext';
 
 export const TextInputs = () => {
 
-    const [inputTest, setInputTest] = useState("");
+    // const [ formState,setFormState ] = useState("")
+    
 
     const handleTest = () => {
         console.log("hurraay")
     }
 
-    const currency = React.useContext(FormContext);
-    console.log(currency)
+    const { setFormState } = useContext(FormContext)
+
+    
 
     
 
@@ -27,8 +29,8 @@ export const TextInputs = () => {
                     maxLength="15"
                     error="Please input your first name"
                     className= "text-input"
-                    value={ inputTest }
-                    onChange={handleTest}
+                    // value={{formState, setFormState}}
+                    // onChange={""}
                 />
 
             <TextInput
