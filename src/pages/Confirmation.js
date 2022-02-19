@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { Button, Modal } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
+import { FormContext } from '../context/FormContext';
 
-export const Confirmation = (props) => {
+export const Confirmation = () => {
     let navigate = useNavigate();
-    console.log(props)
-    
+
+    const [ formState, setFormState] = useContext(FormContext)
+    console.log(formState)
 
     return (
         <>
             <TopNav />
             <main>
-                <p>Please Confirm your Information</p>
+                {/* <p>Please Confirm your Information</p>
                 <p>First Name: {props.firstName}</p>
                 <p>Last Name: {props.lastName}</p>
                 <p>Email: {props.email}</p>
@@ -24,7 +26,7 @@ export const Confirmation = (props) => {
                 <p>Check Box 4: {props.checkbox4}</p>
                 <p>Check Box 5: {props.checkbox5}</p>
                 <p>Radio Value: {props.radio}</p>
-                <p>File Input: {props.fileInput}</p>
+                <p>File Input: {props.fileInput}</p> */}
                 <Button
                     node="button"
                     style={{

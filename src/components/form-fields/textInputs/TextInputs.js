@@ -13,26 +13,27 @@ export const TextInputs = () => {
         console.log("hurraay")
     }
 
-    const { setFormState } = useContext(FormContext)
+    const [ formState, setFormState] = useContext(FormContext)
+    console.log(formState)
 
-    
+    console.log(formState.firstName)
 
-    
+
+    const handleFirstName = (e) => {
+        const updatedForm = { ...formState }
+        console.log(updatedForm)
+
+        updatedForm[e.target.firstName] = e.target.value;
+
+        console.log('Form changed: ', updatedForm);
+
+        // setFormState(e.target.value)
+        setFormState(updatedForm);
+        
+    }
 
     return (
         <>
-                <TextInput
-                    id="TextInput-32"
-                    placeholder="..."
-                    validate
-                    minLength="2"
-                    maxLength="15"
-                    error="Please input your first name"
-                    className= "text-input"
-                    // value={{formState, setFormState}}
-                    // onChange={""}
-                />
-
             <TextInput
                     id="TextInput-32"
                     placeholder="First Name"
@@ -41,8 +42,7 @@ export const TextInputs = () => {
                     maxLength="15"
                     error="Please input your first name"
                     className= "text-input"
-                    // value={formState.firstName} 
-                    // onChange={e => setFormState(e.target.value)} 
+                    onChange={handleFirstName} 
                 />
                 <TextInput
                     id="TextInput-32"

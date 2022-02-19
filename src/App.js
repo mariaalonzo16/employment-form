@@ -30,16 +30,27 @@ export const App = () => {
  const formValues = {
    firstName: '',
    lastName: '',
+   email: '',
+   phoneNumber: '',
+   specialty1: '',
+   specialty2: '', 
+   specialty3: '', 
+   specialty4: '', 
+   specialty5: '', 
+   yearsPracticed: '',
+   desiredIncome: '',
+   resumeCV: ''
   }
  
 
-  const [ formState,setFormState ] = useState("david")
-
-  
-  
+  const [ formState,setFormState ] = useState(formValues)
+  console.log(formState)
+  // console.log( formValues.firstName)
+  // formValues.firstName = "maria"
+  // console.log( formValues.firstName)
 
   return (
-    <FormContext.Provider value={{formState, setFormState}}>
+    <FormContext.Provider value={[formState, setFormState]}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/open-roles" element={<OpenRoles />} />
