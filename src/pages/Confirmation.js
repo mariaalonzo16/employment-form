@@ -15,6 +15,7 @@ export const Confirmation = () => {
         <>
             <TopNav />
             <main>
+                <h1>{formState.firstName}</h1>
                 {/* <p>Please Confirm your Information</p>
                 <p>First Name: {props.firstName}</p>
                 <p>Last Name: {props.lastName}</p>

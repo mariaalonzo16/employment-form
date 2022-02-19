@@ -20,10 +20,12 @@ export const TextInputs = () => {
 
 
     const handleFirstName = (e) => {
-        const updatedForm = { ...formState }
+        const updatedForm = { ...formState, firstName:e.target.value}
         console.log(updatedForm)
 
         updatedForm[e.target.firstName] = e.target.value;
+
+        // updatedForm[e.target.firstName] = e.target.value;
 
         console.log('Form changed: ', updatedForm);
 
