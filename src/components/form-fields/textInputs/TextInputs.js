@@ -6,30 +6,38 @@ import { FormContext } from '../../../context/FormContext';
 
 export const TextInputs = () => {
 
-    // const [ formState,setFormState ] = useState("")
-    
-
-    const handleTest = () => {
-        console.log("hurraay")
-    }
-
     const [ formState, setFormState] = useContext(FormContext)
     console.log(formState)
-
-    console.log(formState.firstName)
-
 
     const handleFirstName = (e) => {
         const updatedForm = { ...formState, firstName:e.target.value}
         console.log(updatedForm)
 
-        updatedForm[e.target.firstName] = e.target.value;
+        setFormState(updatedForm);
+        
+    }
 
-        // updatedForm[e.target.firstName] = e.target.value;
+    const handleLastName = (e) => {
+        const updatedForm = { ...formState, lastName:e.target.value}
+        console.log(updatedForm)
 
-        console.log('Form changed: ', updatedForm);
+        setFormState(updatedForm);
+        
+    }
 
-        // setFormState(e.target.value)
+    const handleEmail = (e) => {
+        const updatedForm = { ...formState, email:e.target.value}
+        console.log(updatedForm)
+
+        setFormState(updatedForm);
+        
+    }
+
+    const handlephoneNumber = (e) => {
+        const updatedForm = { ...formState, phoneNumber:e.target.value}
+        console.log(updatedForm)
+
+
         setFormState(updatedForm);
         
     }
@@ -54,8 +62,7 @@ export const TextInputs = () => {
                     maxLength="15"
                     error="Please input your last name"
                     className= "text-input"
-                    // value={formState.lastName} 
-                    // onChange={e => setFormState(e.target.value)} 
+                    onChange={handleLastName} 
                 />
                 <TextInput
                     id="TextInput-43"
@@ -64,6 +71,7 @@ export const TextInputs = () => {
                     placeholder="Email"
                     validate
                     className= "text-input"
+                    onChange={handleEmail} 
                 />
                 <TextInput
                     id="TextInput-32"
@@ -74,6 +82,7 @@ export const TextInputs = () => {
                     minLength="2"
                     error="Please input your phone number"
                     className= "text-input"
+                    onChange={handlephoneNumber} 
                 />
         </>
     );

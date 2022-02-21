@@ -44,10 +44,9 @@ export const App = () => {
  
 
   const [ formState,setFormState ] = useState(formValues)
+  
   console.log(formState)
-  // console.log( formValues.firstName)
-  // formValues.firstName = "maria"
-  // console.log( formValues.firstName)
+ 
 
   return (
     <FormContext.Provider value={[formState, setFormState]}>

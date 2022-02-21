@@ -15,19 +15,19 @@ export const Confirmation = () => {
         <>
             <TopNav />
             <main>
-                <h1>{formState.firstName}</h1>
-                {/* <p>Please Confirm your Information</p>
-                <p>First Name: {props.firstName}</p>
-                <p>Last Name: {props.lastName}</p>
-                <p>Email: {props.email}</p>
-                <p>Phone Number: {props.phoneNumber}</p>
-                <p>Check Box 1: {props.checkbox1}</p>
+                {/* <h1>{formState.firstName}</h1> */}
+                <p>Please Confirm your Information</p> 
+                <p>First Name: {formState.firstName}</p>
+                <p>Last Name: {formState.lastName}</p>
+                <p>Email: {formState.email}</p>
+                <p>Phone Number: {formState.phoneNumber}</p>
+                {/* <p>Check Box 1: {props.checkbox1}</p>
                 <p>Check Box 2: {props.checkbox2}</p>
                 <p>Check Box 3: {props.checkbox3}</p>
                 <p>Check Box 4: {props.checkbox4}</p>
                 <p>Check Box 5: {props.checkbox5}</p>
                 <p>Radio Value: {props.radio}</p>
-                <p>File Input: {props.fileInput}</p> */}
+                <p>File Input: {props.fileInput}</p>  */}
                 <Button
                     node="button"
                     style={{

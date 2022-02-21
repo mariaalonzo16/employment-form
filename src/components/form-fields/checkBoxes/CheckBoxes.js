@@ -1,52 +1,44 @@
 import { Checkbox } from 'react-materialize';
+import React, {useState, useContext} from 'react'; 
+import { FormContext } from '../../../context/FormContext';
 import './CheckBoxes.scss';
+import { Specialties } from '../../../data/Specialties';
+import { v4 as uuidv4 } from 'uuid';
 
 export const CheckBoxes = () => {
+
+    const [ formState, setFormState] = useContext(FormContext)
+
+    // const [checked, setChecked]= useContext(false);
+
+    const handleChecked = () => {
+     console.log("maria")
+        
+    }
+
+    // const [checked, setChecked]= useContext(false);
+
+    // const handleChecked = () => {
+    //     console.log("maria")
+    //     setChecked(!checked)
+    // }
+
     return (
         <>
             <p className='specialty'> Select a specialty you have previously worked in:</p>
-            <span>
+            {Specialties.map((specialty) => (
                 <span className='checkbox'>
                     <Checkbox
-                        id="Checkbox_1"
-                        label="Neurology"
-                        value='Neurology'
+                        id={uuidv4()}
+                        label={specialty}
+                        value={specialty}
+                        checked={false}
+                        onChange={handleChecked}
                     />
                 </span>
-                
-                <span className='checkbox'>
-                    <Checkbox
-                        id="Checkbox_2"
-                        label="Oncology"
-                        value='Oncology'
-                    />
-                </span>
-                
-                <span className='checkbox'>
-                    <Checkbox
-                        id="Checkbox_3"
-                        label="Womens Health"
-                        value='Womens Health'
-                    />
-                </span>
-                
-                <span className='checkbox'>
-                    <Checkbox
-                        id="Checkbox_4"
-                        label="Pediatrics"
-                        value='Pediatrics'
-                    />
-                </span>
-                
-                <span className='checkbox'>
-                    <Checkbox
-                        id="Checkbox_5"
-                        label="Dermatology"
-                        value='Dermatology'
-                    />
-                </span>
-                
-            </span>
+            ))}
+           
+        
         </>
     );
 }
