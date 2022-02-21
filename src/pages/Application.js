@@ -18,7 +18,7 @@ export const Application = () => {
         jobTitle[i] = jobTitle[i].charAt(0).toUpperCase() + jobTitle[i].slice(1);
     }
     const titleDisplay = jobTitle.join(" ");
-
+    
 
     return (
         <>

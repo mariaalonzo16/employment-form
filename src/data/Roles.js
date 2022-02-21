@@ -1,6 +1,7 @@
 export const Roles = [
     {
         title: "Nurse Practitioner",
+        link: "nurse+practitioner",
         p1: "codeHealth is a private practice seeking a full-time Nurse Practitioner (NP)" + 
             " to work with our physicians in our Oncology department in the Raleigh Location."+
             " We offer competitive salary and full benefits package including 401(k), and"+
@@ -22,6 +23,7 @@ export const Roles = [
     },
     {
         title: "Physician Associate",
+        link: "physician+associate",
         p1: "codeHealth is a private practice seeking a full-time Physician Associate (PA) to" +
             "work with our physician in our Psychiatry & Emotional Health department in the Raleigh" +
             "Location. We offer competitive salary and full benefits package including 401(k), and" +
@@ -42,6 +44,7 @@ export const Roles = [
     },
     {
         title: "Registered Nurse",
+        link: "registered+nurse",
         p1: "codeHealth is a private practice seeking a full-time Registered Nurse (RN) to work in our cardiology" + 
             "department in the Raleigh Location. RN will provide individual education to each patient about their chronic" + 
             "illness to help patient understand their condition and treatment plan. RN must be knowledgeable on conditions" +

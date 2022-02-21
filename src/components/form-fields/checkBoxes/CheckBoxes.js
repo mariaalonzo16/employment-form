@@ -29,11 +29,11 @@ export const CheckBoxes = () => {
             {Specialties.map((specialty) => (
                 <span className='checkbox'>
                     <Checkbox
-                        id={uuidv4()}
                         label={specialty}
                         value={specialty}
                         checked={false}
                         onChange={handleChecked}
+                        key={uuidv4()}
                     />
                 </span>
             ))}
