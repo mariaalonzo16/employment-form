@@ -9,7 +9,7 @@ export const CheckBoxes = () => {
 
     const [ formState, setFormState] = useContext(FormContext)
 
-    // const [checked, setChecked]= useContext(false);
+    // const [checked, setChecked]= useContext("");
 
     const handleChecked = () => {
      console.log("maria")
