@@ -3,37 +3,35 @@ import React, {useState, useContext} from 'react';
 import { FormContext } from '../../../context/FormContext';
 import './CheckBoxes.scss';
 import { Specialties } from '../../../data/Specialties';
-import { v4 as uuidv4 } from 'uuid';
 
 export const CheckBoxes = () => {
 
     const [ formState, setFormState] = useContext(FormContext)
 
-    // const [checked, setChecked]= useContext("");
+    const [isChecked, setIsChecked]= useState(
+        new Array(Specialties.length).fill(false)
+    );
 
-    const handleChecked = () => {
-     console.log("maria")
-        
+    const handleChecked = (position) => {
+        const updatedCheckedState = isChecked.map((item, index) =>
+          index === position ? !item : item
+        );
+       setIsChecked(updatedCheckedState); 
     }
 
-    // const [checked, setChecked]= useContext(false);
-
-    // const handleChecked = () => {
-    //     console.log("maria")
-    //     setChecked(!checked)
-    // }
-
+    console.log(isChecked)
+    
     return (
         <>
             <p className='specialty'> Select a specialty you have previously worked in:</p>
-            {Specialties.map((specialty) => (
-                <span className='checkbox'>
+            {Specialties.map((specialty, index) => (
+                <span className='checkbox' key={index}>
                     <Checkbox
                         label={specialty}
+                        id={`specialty-checkbox-${index}`}
                         value={specialty}
-                        checked={false}
-                        onChange={handleChecked}
-                        key={uuidv4()}
+                        checked={isChecked[index]}
+                        onChange={() => handleChecked(index)}
                     />
                 </span>
             ))}

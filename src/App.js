@@ -17,11 +17,11 @@ export const App = () => {
   const lastName = "Smith";
   const email = "mark.smith@gmail.com";
   const phoneNumber = "555-555-5555";
-  const checkbox1 = "anesthesiology";
-  const checkbox2 =  "Oncology";
-  const checkbox3 = "Womens Health";
-  const checkbox4 = "Pediatrics";
-  const checkbox5 = "Dermatology";
+  const specialty1 = "anesthesiology";
+  const specialty2 =  "Oncology";
+  const specialty3 = "Womens Health";
+  const specialty4 = "Pediatrics";
+  const specialty5 = "Dermatology";
   const radio = "radio value";
   const range = "range value";
   const fileInput = "file value";
@@ -41,11 +41,12 @@ export const App = () => {
    desiredIncome: '',
    resumeCV: ''
   }
+
  
 
   const [ formState,setFormState ] = useState(formValues)
   
-  console.log(formState)
+  
  
 
   return (
@@ -63,11 +64,11 @@ export const App = () => {
               lastName={lastName} 
               email={email} 
               phoneNumber={phoneNumber}
-              checkbox1={checkbox1}
-              checkbox2={checkbox2}
-              checkbox3={checkbox3}
-              checkbox4={checkbox4}
-              checkbox5={checkbox5}
+              checkbox1={specialty1}
+              checkbox2={specialty2}
+              checkbox3={specialty3}
+              checkbox4={specialty4}
+              checkbox5={specialty5}
               radio={radio}
               range={range}
               fileInput={fileInput}
