@@ -11,6 +11,8 @@ import { FormContext } from './context/FormContext';
 
 
 
+
+
 export const App = () => {
 
   const firstName = "Mark";
@@ -32,11 +34,12 @@ export const App = () => {
    lastName: '',
    email: '',
    phoneNumber: '',
-   specialty1: '',
-   specialty2: '', 
-   specialty3: '', 
-   specialty4: '', 
-   specialty5: '', 
+  //  specialty1: '',
+  //  specialty2: '', 
+  //  specialty3: '', 
+  //  specialty4: '', 
+  //  specialty5: '', 
+   specialties: '',
    yearsPracticed: '',
    desiredIncome: '',
    resumeCV: ''
@@ -75,7 +78,7 @@ export const App = () => {
             />}  
         />
       </Routes>
-
+      
 
       {/* <Test1 /> */}
     </FormContext.Provider>

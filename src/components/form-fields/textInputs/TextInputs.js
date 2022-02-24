@@ -7,7 +7,7 @@ import { FormContext } from '../../../context/FormContext';
 export const TextInputs = () => {
 
     const [ formState, setFormState] = useContext(FormContext)
-    console.log(formState)
+    // console.log(formState)
 
     const handleFirstName = (e) => {
         const updatedForm = { ...formState, firstName:e.target.value}

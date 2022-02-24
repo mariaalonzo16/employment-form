@@ -7,6 +7,7 @@ import { Specialties } from '../../../data/Specialties';
 export const CheckBoxes = () => {
 
     const [ formState, setFormState] = useContext(FormContext)
+    
 
     const [isChecked, setIsChecked]= useState(
         new Array(Specialties.length).fill(false)
@@ -17,9 +18,28 @@ export const CheckBoxes = () => {
           index === position ? !item : item
         );
        setIsChecked(updatedCheckedState); 
+
+     
+
+        // const updatedForm = { ...formState, specialties:isChecked}
+        // setFormState(updatedForm);
+
+        setCheckboxState()
+
     }
 
+        const setCheckboxState = () => {
+            const updatedForm = { ...formState, specialties:isChecked}
+         setFormState(updatedForm);
+            console.log("maria")
+        }
+    
+    
     console.log(isChecked)
+
+  
+   
+    console.log(formState)
     
     return (
         <>

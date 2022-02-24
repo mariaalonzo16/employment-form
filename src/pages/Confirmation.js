@@ -21,8 +21,8 @@ export const Confirmation = () => {
                 <p>Last Name: {formState.lastName}</p>
                 <p>Email: {formState.email}</p>
                 <p>Phone Number: {formState.phoneNumber}</p>
-                {/* <p>Check Box 1: {props.checkbox1}</p>
-                <p>Check Box 2: {props.checkbox2}</p>
+                <p>Check Box 1: {formState.specialty1}</p>
+                {/* <p>Check Box 2: {props.checkbox2}</p>
                 <p>Check Box 3: {props.checkbox3}</p>
                 <p>Check Box 4: {props.checkbox4}</p>
                 <p>Check Box 5: {props.checkbox5}</p>
