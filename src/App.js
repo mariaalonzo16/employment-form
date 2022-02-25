@@ -15,42 +15,19 @@ import { FormContext } from './context/FormContext';
 
 export const App = () => {
 
-  const firstName = "Mark";
-  const lastName = "Smith";
-  const email = "mark.smith@gmail.com";
-  const phoneNumber = "555-555-5555";
-  const specialty1 = "anesthesiology";
-  const specialty2 =  "Oncology";
-  const specialty3 = "Womens Health";
-  const specialty4 = "Pediatrics";
-  const specialty5 = "Dermatology";
-  const radio = "radio value";
-  const range = "range value";
-  const fileInput = "file value";
-
-
  const formValues = {
    firstName: '',
    lastName: '',
    email: '',
    phoneNumber: '',
-  //  specialty1: '',
-  //  specialty2: '', 
-  //  specialty3: '', 
-  //  specialty4: '', 
-  //  specialty5: '', 
-   specialties: '',
+   specialties: [],
    yearsPracticed: '',
    desiredIncome: '',
    resumeCV: ''
   }
 
- 
-
   const [ formState,setFormState ] = useState(formValues)
-  
-  
- 
+  console.log(formState)
 
   return (
     <FormContext.Provider value={[formState, setFormState]}>
@@ -62,20 +39,7 @@ export const App = () => {
         <Route 
           path="/confirmation" 
           element={
-            <Confirmation 
-              firstName={firstName} 
-              lastName={lastName} 
-              email={email} 
-              phoneNumber={phoneNumber}
-              checkbox1={specialty1}
-              checkbox2={specialty2}
-              checkbox3={specialty3}
-              checkbox4={specialty4}
-              checkbox5={specialty5}
-              radio={radio}
-              range={range}
-              fileInput={fileInput}
-            />}  
+            <Confirmation />}  
         />
       </Routes>
       

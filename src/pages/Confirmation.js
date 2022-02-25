@@ -4,12 +4,26 @@ import { Footers } from '../layouts/footer/Footers';
 import { Button, Modal } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
 import { FormContext } from '../context/FormContext';
+import { Specialties } from '../data/Specialties';
 
 export const Confirmation = () => {
     let navigate = useNavigate();
 
     const [ formState, setFormState] = useContext(FormContext)
     console.log(formState)
+
+    console.log(formState.specialties[2])
+    console.log(formState.specialties)
+
+    for (let i=0; i < Specialties.length; i++) {
+        const checkedSpecialties = []
+        if (formState.specialties[i]) {
+            if (Specialties[i] == formState.specialties[i]) {
+                checkedSpecialties.push(Specialties[i])
+            }
+        }
+        console.log(checkedSpecialties)
+    }
 
     return (
         <>
@@ -21,7 +35,14 @@ export const Confirmation = () => {
                 <p>Last Name: {formState.lastName}</p>
                 <p>Email: {formState.email}</p>
                 <p>Phone Number: {formState.phoneNumber}</p>
-                <p>Check Box 1: {formState.specialty1}</p>
+
+                
+                {/* {formState.specialties.map((interest) => (<p>Specialty of Interest: </p>))}  */}
+                {Specialties.map((interest) => (
+                    <p>Specialty of Interest: {interest} </p>
+                ))}
+
+            
                 {/* <p>Check Box 2: {props.checkbox2}</p>
                 <p>Check Box 3: {props.checkbox3}</p>
                 <p>Check Box 4: {props.checkbox4}</p>

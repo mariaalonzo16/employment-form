@@ -3,7 +3,7 @@ import './FileInput.scss';
 
 export const FileInput = () => {
     return (
-        <span inputClassName="submit-button">
+        <span className="submit-button">
             <TextInput
                     id="TextInput-26"
                     label="Submit Resume"

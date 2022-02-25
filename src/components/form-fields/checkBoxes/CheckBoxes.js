@@ -19,28 +19,11 @@ export const CheckBoxes = () => {
         );
        setIsChecked(updatedCheckedState); 
 
-     
-
-        // const updatedForm = { ...formState, specialties:isChecked}
-        // setFormState(updatedForm);
-
-        setCheckboxState()
+        const updatedForm = { ...formState, specialties:updatedCheckedState}
+        setFormState(updatedForm);
 
     }
-
-        const setCheckboxState = () => {
-            const updatedForm = { ...formState, specialties:isChecked}
-         setFormState(updatedForm);
-            console.log("maria")
-        }
-    
-    
-    console.log(isChecked)
-
-  
-   
-    console.log(formState)
-    
+        
     return (
         <>
             <p className='specialty'> Select a specialty you have previously worked in:</p>
