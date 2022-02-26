@@ -1,17 +1,11 @@
 import './App.scss';
 import { Home } from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
-import React, { createContext, useContext, useState }from 'react';
+import React, {  useState }from 'react';
 import { OpenRoles } from './pages/OpenRoles';
 import { Application } from './pages/Application';
 import { Confirmation } from './pages/Confirmation';
 import { FormContext } from './context/FormContext';
-
-
-
-
-
-
 
 export const App = () => {
 

@@ -29,20 +29,16 @@ export const Confirmation = () => {
         <>
             <TopNav />
             <main>
-                {/* <h1>{formState.firstName}</h1> */}
                 <p>Please Confirm your Information</p> 
                 <p>First Name: {formState.firstName}</p>
                 <p>Last Name: {formState.lastName}</p>
                 <p>Email: {formState.email}</p>
                 <p>Phone Number: {formState.phoneNumber}</p>
 
-                
-                {/* {formState.specialties.map((interest) => (<p>Specialty of Interest: </p>))}  */}
                 {formState.specialties.map((interest,index) => (
                     <p key={index}>Specialty of Interest: {interest} </p>
                 ))}
 
-            
                 {/* <p>Check Box 2: {props.checkbox2}</p>
                 <p>Check Box 3: {props.checkbox3}</p>
                 <p>Check Box 4: {props.checkbox4}</p>

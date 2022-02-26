@@ -7,8 +7,7 @@ import { NavButton } from '../components/form-fields/buttons/NavButton';
 
 export const Home = () => {
     let navigate = useNavigate();
-    // const myTimeout = setTimeout(myGreeting, 5000);
-
+    
     const today = new Date()
     const currentHour = today.getHours()
 
@@ -37,26 +36,11 @@ export const Home = () => {
                         Stay up-to-date with codeHealth's  employment opportunities. 
                     </p>
 
-                    {/* <Button
-                        className='button'
-                        node="button"
-                        style={{
-                        marginRight: '5px'
-                        }}
-                        waves="light"
-                        onClick={() => {
-                            navigate("/open-roles")
-                        }}
-                    >
-                        Open Roles
-                    </Button> */}
-
                     <NavButton
                         innerText="Open Roles"
                         route="/open-roles"
 
                     />
-
 
                 </main>
                 <Footers />
