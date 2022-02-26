@@ -14,16 +14,28 @@ export const CheckBoxes = () => {
     );
 
     const handleChecked = (position) => {
+
         const updatedCheckedState = isChecked.map((item, index) =>
           index === position ? !item : item
         );
        setIsChecked(updatedCheckedState); 
-
-        const updatedForm = { ...formState, specialties:updatedCheckedState}
-        setFormState(updatedForm);
-
-    }
         
+
+        
+        const checkboxDisplayState = []
+
+        updatedCheckedState.map((specialty, index) => {
+            if (specialty) {
+                checkboxDisplayState.push(Specialties[index])
+            } 
+            return ""
+        })
+        
+        const updatedForm = { ...formState, specialties:checkboxDisplayState}
+        setFormState(updatedForm);
+        
+    }
+      
     return (
         <>
             <p className='specialty'> Select a specialty you have previously worked in:</p>
@@ -35,6 +47,7 @@ export const CheckBoxes = () => {
                         value={specialty}
                         checked={isChecked[index]}
                         onChange={() => handleChecked(index)}
+                        
                     />
                 </span>
             ))}

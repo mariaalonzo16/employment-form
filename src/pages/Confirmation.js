@@ -38,8 +38,8 @@ export const Confirmation = () => {
 
                 
                 {/* {formState.specialties.map((interest) => (<p>Specialty of Interest: </p>))}  */}
-                {Specialties.map((interest) => (
-                    <p>Specialty of Interest: {interest} </p>
+                {formState.specialties.map((interest,index) => (
+                    <p key={index}>Specialty of Interest: {interest} </p>
                 ))}
 
             
