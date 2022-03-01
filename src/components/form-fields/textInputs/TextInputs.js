@@ -2,12 +2,13 @@ import { TextInput } from 'react-materialize';
 import React, { createContext, useContext, useState }from 'react';
 import './TextInputs.scss';
 import { FormContext } from '../../../context/FormContext';
+// import handleFirstName from '../../../functions/handleFirstName';
 
 
 export const TextInputs = () => {
 
     const [ formState, setFormState] = useContext(FormContext)
-    // console.log(formState)
+    console.log(formState)
 
     const handleFirstName = (e) => {
         const updatedForm = { ...formState, firstName:e.target.value}

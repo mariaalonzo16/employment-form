@@ -21,7 +21,7 @@ export const App = () => {
   }
 
   const [ formState,setFormState ] = useState(formValues)
-  console.log(formState)
+  
 
   return (
     <FormContext.Provider value={[formState, setFormState]}>
@@ -29,12 +29,7 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/open-roles" element={<OpenRoles />} />
         <Route path="/application/*" element={<Application />} />
-
-        <Route 
-          path="/confirmation" 
-          element={
-            <Confirmation />}  
-        />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
       
 
