@@ -5,23 +5,23 @@ import { Footers } from '../layouts/footer/Footers';
 import { NavButton } from '../components/form-fields/buttons/NavButton';
 
 export const Home = () => {
-    let navigate = useNavigate();
     
     const today = new Date()
     const currentHour = today.getHours()
 
     useEffect(() => {
+        console.log("hello")
         if (currentHour < 12) {
-            document.getElementById("demo").innerHTML = "Good Morning!"
+            document.getElementById("greeting").innerHTML = "Good Morning!"
         } else if (currentHour < 18) {
-            document.getElementById("demo").innerHTML = "Good Afternoon!"
+            document.getElementById("greeting").innerHTML = "Good Afternoon!"
         } else {
-            document.getElementById("demo").innerHTML = "Good Evening!"
+            document.getElementById("greeting").innerHTML = "Good Evening!"
         }
-    },);
+    }, []);
 
    const myGreeting = () => {
-        document.getElementById("demo").innerHTML = "Welcome to codeHealth!"
+        document.getElementById("greeting").innerHTML = "Welcome to codeHealth!"
     }
     setTimeout(myGreeting, 2000)
     
@@ -29,7 +29,7 @@ export const Home = () => {
             <>
                 <TopNav />
                 <main> 
-                    <h1 id="demo" className='heading'>Greetings! </h1> 
+                    <h1 id="greeting" className='heading'></h1> 
 
                     <p className='welcome'>
                         Stay up-to-date with codeHealth's  employment opportunities. 

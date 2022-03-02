@@ -4,8 +4,6 @@ import './Buttons.scss';
 
 export const NavButton = (props) => {
 
-    console.log(props)
-
     let navigate = useNavigate();
     return (
         <>
