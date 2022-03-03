@@ -6,15 +6,12 @@ import { Ranges } from '../components/form-fields/range/Ranges';
 import { FileInput } from '../components/form-fields/fileInput/FileInput';
 import { Buttons } from '../components/form-fields/buttons/Buttons';
 import { Footers } from '../layouts/footer/Footers';
-import { useEffect } from 'react';
+
 
 
 
 export const Application = () => {
 
-    useEffect(() => {
-        console.log("hello")
-    });
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);

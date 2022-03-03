@@ -9,11 +9,7 @@ import { Specialties } from '../data/Specialties';
 export const Confirmation = () => {
     let navigate = useNavigate();
 
-    const [ formState, setFormState] = useContext(FormContext)
-    console.log(formState)
-
-    console.log(formState.specialties[2])
-    console.log(formState.specialties)
+    const [ formState ] = useContext(FormContext)
 
     for (let i=0; i < Specialties.length; i++) {
         const checkedSpecialties = []
@@ -22,7 +18,6 @@ export const Confirmation = () => {
                 checkedSpecialties.push(Specialties[i])
             }
         }
-        console.log(checkedSpecialties)
     }
 
     return (
@@ -39,12 +34,6 @@ export const Confirmation = () => {
                     <p key={index}>Specialty of Interest: {interest} </p>
                 ))}
 
-                {/* <p>Check Box 2: {props.checkbox2}</p>
-                <p>Check Box 3: {props.checkbox3}</p>
-                <p>Check Box 4: {props.checkbox4}</p>
-                <p>Check Box 5: {props.checkbox5}</p>
-                <p>Radio Value: {props.radio}</p>
-                <p>File Input: {props.fileInput}</p>  */}
                 <Button
                     node="button"
                     style={{
