@@ -20,7 +20,7 @@ export const App = () => {
    resumeCV: ''
   }
 
-  const [ formState,setFormState ] = useState(formValues)
+  const [ formState, setFormState ] = useState(formValues)
   
 
   return (

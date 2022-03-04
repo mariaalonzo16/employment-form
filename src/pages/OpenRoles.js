@@ -7,7 +7,7 @@ import { Roles } from '../data/Roles';
 import { v4 as uuidv4 } from 'uuid';
 
 export const OpenRoles = () => {
-    
+    console.log(Roles)
 
     return (
         <>
@@ -17,12 +17,11 @@ export const OpenRoles = () => {
                     <h1 className='heading'>Open Roles</h1>
 
                     <Collapsible accordion>
-                        {Roles.map((role) => (
+                        {Roles.map((role, index) => (
                             <CollapsibleItem
                                 expanded={false}
                                 header={role.title}
-                                node="div"
-                                key={uuidv4()}
+                                key={index}
                             >
                             <p className='subtitle'> Job Description: </p>
                             <p> {role.p1}
