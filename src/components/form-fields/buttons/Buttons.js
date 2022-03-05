@@ -6,9 +6,6 @@ export const Buttons = () => {
     let navigate = useNavigate();
     return (
         <>
-            
-
-
             <Button
                 className='buttons'
                 node="button"

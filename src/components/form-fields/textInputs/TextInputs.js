@@ -2,46 +2,17 @@ import { TextInput } from 'react-materialize';
 import React, { createContext, useContext, useState }from 'react';
 import './TextInputs.scss';
 import { FormContext } from '../../../context/FormContext';
-// import handleFirstName from '../../../functions/handleFirstName';
+import { useInputLogic } from '../../../functions/useInputLogic';
 
 
 export const TextInputs = () => {
 
-    const [ formState, setFormState] = useContext(FormContext)
-    console.log(formState)
-
-    const handleFirstName = (e) => {
-        const updatedForm = { ...formState, firstName:e.target.value}
-        console.log(updatedForm)
-
-        setFormState(updatedForm);
-        
-    }
-
-    const handleLastName = (e) => {
-        const updatedForm = { ...formState, lastName:e.target.value}
-        console.log(updatedForm)
-
-        setFormState(updatedForm);
-        
-    }
-
-    const handleEmail = (e) => {
-        const updatedForm = { ...formState, email:e.target.value}
-        console.log(updatedForm)
-
-        setFormState(updatedForm);
-        
-    }
-
-    const handlephoneNumber = (e) => {
-        const updatedForm = { ...formState, phoneNumber:e.target.value}
-        console.log(updatedForm)
-
-
-        setFormState(updatedForm);
-        
-    }
+    const { 
+        handleFirstName,
+        handleLastName,
+        handleEmail,
+        handlePhoneNumber
+    } = useInputLogic();
 
     return (
         <>
@@ -83,7 +54,7 @@ export const TextInputs = () => {
                     minLength="2"
                     error="Please input your phone number"
                     className= "text-input"
-                    onChange={handlephoneNumber} 
+                    onChange={handlePhoneNumber} 
                 />
         </>
     );

@@ -4,7 +4,6 @@ import {  NavButton } from '../components/form-fields/buttons/NavButton';
 import { Footers } from '../layouts/footer/Footers';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Roles } from '../data/Roles';
-import { v4 as uuidv4 } from 'uuid';
 
 export const OpenRoles = () => {
     console.log(Roles)
@@ -24,25 +23,25 @@ export const OpenRoles = () => {
                                 key={index}
                             >
                             <p className='subtitle'> Job Description: </p>
-                            <p> {role.p1}
+                            <p> {role.description}
                             </p>
-                            <p>{role.p2}</p>
-                            <p>{role.p3}</p>
+                            <p>Primary hours will be Monday-Friday, 8am-5pm</p>
+                            <p>No call or weekends</p>
                             
                             <p className='subtitle'> Requirements: </p>
-                            <p> {role.p5}</p>
-                            <p> {role.p6}</p>
+                            <p> {role.licensure}</p>
+                            <p> {role.experience}</p>
                             <p className='subtitle'> Job Type: </p>
-                            <p> {role.p8}</p>
+                            <p> Full Time</p>
                             <p className='subtitle'> Salary: </p>
-                            <p> {role.p10} </p>
+                            <p> {role.salary} </p>
                             <p className='subtitle'> Benefits: </p>
-                            <p> {role.p12} </p>
-                            <p> {role.p13} </p>
-                            <p> {role.p14}</p>
-                            <p> {role.p15}</p>
-                            <p> {role.p16} </p>
-                            <p> {role.p17}</p>
+                            <p> 401(k) </p>
+                            <p> Dental insurance </p>
+                            <p> Health insurance </p>
+                            <p> Life insurance </p>
+                            <p> Paid time off </p>
+                            <p> Retirement plan </p>
 
                             <NavButton 
                                 innerText="Apply Now"
