@@ -1,62 +1,69 @@
-import { RadioGroup } from 'react-materialize';
 import './RadioGroups.scss';
+import { useState, useContext } from 'react';
+import { Radio } from '../../../data/Radio';
+import { FormContext } from '../../../context/FormContext';
 
 export const RadioGroups = () => {
+
+    const [ formState, setFormState] = useContext(FormContext)
+
+    const [isChecked, setIsChecked]= useState(false);
+
+    const handleChecked = (position) => {
+
+        const updatedCheckedState = isChecked.map((item, index) =>
+          index === position ? !item : item
+        );
+       setIsChecked(updatedCheckedState); 
+        
+
+        
+        const checkboxDisplayState = []
+
+        updatedCheckedState.map((specialty, index) => {
+            if (specialty) {
+                checkboxDisplayState.push(Radio[index])
+            } 
+            return ""
+        })
+        
+        const updatedForm = { ...formState, specialties:checkboxDisplayState}
+        setFormState(updatedForm);
+        
+    }
+
     return(
         <>
             <p className='number-years'>For how many years have you been practicing medicine?</p>
             <span className='radio-group'>
-            <RadioGroup
-                label="Years of Practice"
-                name="size"
-                onChange={function noRefCheck(){}}
-                options={[
-                    {
-                    label: '< 5',
-                    value: '< 5'
-                    },
-                ]}
-            />
-            </span>
 
-            <span className='radio-group'>
-            <RadioGroup
-                label="Years of Practice"
-                name="size"
-                onChange={function noRefCheck(){}}
-                options={[
-                    {
-                    label: '5-9',
-                    value: '5-9'
-                    },
-                ]}
-            />
-            </span>
-            <span className='radio-group'>
-            <RadioGroup
-                label="Years of Practice"
-                name="size"
-                onChange={function noRefCheck(){}}
-                options={[
-                    {
-                    label: '10-14',
-                    value: '10-14'
-                    },
-                ]}
-            />
-            </span>
-            <span className='radio-group'>
-            <RadioGroup
-                label="Years of Practice"
-                name="size"
-                onChange={function noRefCheck(){}}
-                options={[
-                    {
-                    label: '15 or more',
-                    value: '15 or more'
-                    }
-                ]}
-            />
+            <div action="#">
+                <p>
+                <label>
+                    <input name="group1" type="radio" onChange= {handleChecked} />
+                    <span> {"< 5"} </span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input name="group1" type="radio" />
+                    <span>5-9</span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input name="group1" type="radio"  />
+                    <span>10-14</span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input name="group1" type="radio"  />
+                    <span>15 or more</span>
+                </label>
+                </p>
+            </div>  
+
             </span>
         </>
     );
