@@ -9,10 +9,10 @@ export const useInputLogic = () => {
 
     const handleFirstName = (e) => {
         const updatedForm = { ...formState, firstName:e.target.value}
-        console.log(e.target.value)
 
         setFormState(updatedForm);
     }
+
 
     const handleLastName = (e) => {
         const updatedForm = { ...formState, lastName:e.target.value}

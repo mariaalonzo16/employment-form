@@ -9,7 +9,6 @@ export const Home = () => {
     const currentHour = today.getHours()
 
     useEffect(() => {
-        console.log("hello")
         if (currentHour < 12) {
             document.getElementById("greeting").innerHTML = "Good Morning!"
         } else if (currentHour < 18) {

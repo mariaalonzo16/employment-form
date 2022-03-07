@@ -14,7 +14,7 @@ export const Confirmation = () => {
     for (let i=0; i < Specialties.length; i++) {
         const checkedSpecialties = []
         if (formState.specialties[i]) {
-            if (Specialties[i] == formState.specialties[i]) {
+            if (Specialties[i] === formState.specialties[i]) {
                 checkedSpecialties.push(Specialties[i])
             }
         }
@@ -33,6 +33,7 @@ export const Confirmation = () => {
                 {formState.specialties.map((interest,index) => (
                     <p key={index}>Specialty of Interest: {interest} </p>
                 ))}
+                <p>Years Practiced: {formState.yearsPracticed}</p>
 
                 <Button
                     node="button"
