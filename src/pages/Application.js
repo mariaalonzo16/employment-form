@@ -2,10 +2,10 @@ import { TopNav } from '../layouts/topNav/TopNav';
 import { TextInputs } from '../components/form-fields/textInputs/TextInputs';
 import { CheckBoxes } from '../components/form-fields/checkBoxes/CheckBoxes';
 import { RadioGroups } from '../components/form-fields/radioGroup/RadioGroups';
-import { Ranges } from '../components/form-fields/range/Ranges';
 import { FileInput } from '../components/form-fields/fileInput/FileInput';
 import { Buttons } from '../components/form-fields/buttons/Buttons';
 import { Footers } from '../layouts/footer/Footers';
+import { Ranges } from '../components/form-fields/range/Ranges';
 
 
 

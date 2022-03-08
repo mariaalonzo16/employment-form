@@ -34,6 +34,7 @@ export const Confirmation = () => {
                     <p key={index}>Specialty of Interest: {interest} </p>
                 ))}
                 <p>Years Practiced: {formState.yearsPracticed}</p>
+                <p>Desired Income: {formState.desiredIncome}</p>
 
                 <Button
                     node="button"

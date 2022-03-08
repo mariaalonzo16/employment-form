@@ -7,40 +7,40 @@ import { useCheckBoxLogic } from '../../../functions/useCheckBoxLogic';
 
 export const CheckBoxes = () => {
 
-    // const [ formState, setFormState] = useContext(FormContext)
+    const [ formState, setFormState] = useContext(FormContext)
     
 
-    // const [isChecked, setIsChecked]= useState(
-    //     new Array(Specialties.length).fill(false)
-    // );
+    const [isChecked, setIsChecked]= useState(
+        new Array(Specialties.length).fill(false)
+    );
 
-    // const handleChecked = (position) => {
+    const handleChecked = (position) => {
 
-    //     const updatedCheckedState = isChecked.map((item, index) =>
-    //       index === position ? !item : item
-    //     );
-    //    setIsChecked(updatedCheckedState); 
+        const updatedCheckedState = isChecked.map((item, index) =>
+          index === position ? !item : item
+        );
+       setIsChecked(updatedCheckedState); 
         
 
         
-    //     const checkboxDisplayState = []
+        const checkboxDisplayState = []
 
-    //     updatedCheckedState.map((specialty, index) => {
-    //         if (specialty) {
-    //             checkboxDisplayState.push(Specialties[index])
-    //         } 
-    //         return ""
-    //     })
+        updatedCheckedState.map((specialty, index) => {
+            if (specialty) {
+                checkboxDisplayState.push(Specialties[index])
+            } 
+            return ""
+        })
         
-    //     const updatedForm = { ...formState, specialties:checkboxDisplayState}
-    //     setFormState(updatedForm);
+        const updatedForm = { ...formState, specialties:checkboxDisplayState}
+        setFormState(updatedForm);
         
-    // }
+    }
 
-    const {
-        handleChecked,
-        isChecked
-    } = useCheckBoxLogic()
+    // const {
+    //     handleChecked,
+    //     isChecked
+    // } = useCheckBoxLogic()
 
  
       
