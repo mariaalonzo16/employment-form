@@ -7,29 +7,35 @@ import { useContext, useState }from 'react';
 
 export const Ranges = () => {
 
+  const [ formState, setFormState] = useContext(FormContext);
+
+  const handleValueText = (value) => {
+    console.log(value)
+  }
+
+  const handleDesiredIncome = (e) => {
+    const updatedForm = { ...formState, desiredIncome:e.target.value}
+
+    setFormState(updatedForm);
     
-    const [value, setValue] = useState([20, 37]);
+  }
+  
 
-    const handleChange = (e) => {
-        setValue(e.target.value);
-    };
-
-    const valueText = () => {
-        console.log(value)
-    }
-
-    
-
-    return (
-    <Box sx={{ width: 300 }}>
+  return (
+    <Box>
       <Slider
-        
-        value={value}
-        onChange={handleChange}
+        aria-label="Salary"
+        defaultValue={50}
+        getAriaValueText={handleValueText}
         valueLabelDisplay="auto"
-        getAriaValueText={valueText}
+        step={5}
+        marks
+        min={50}
+        max={150}
+        onChange={handleDesiredIncome}
       />
     </Box>
   );
+    
       
 }
