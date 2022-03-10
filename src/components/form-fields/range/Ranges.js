@@ -22,19 +22,22 @@ export const Ranges = () => {
   
 
   return (
-    <Box>
-      <Slider
-        aria-label="Salary"
-        defaultValue={50}
-        getAriaValueText={handleValueText}
-        valueLabelDisplay="auto"
-        step={5}
-        marks
-        min={50}
-        max={150}
-        onChange={handleDesiredIncome}
-      />
-    </Box>
+    <>
+      <p> What is your desired income?</p>
+      <Box>
+        <Slider
+          aria-label="Salary"
+          defaultValue={50}
+          getAriaValueText={handleValueText}
+          valueLabelDisplay="auto"
+          step={5}
+          marks
+          min={50}
+          max={150}
+          onChange={handleDesiredIncome}
+        />
+      </Box>
+    </>
   );
     
       
