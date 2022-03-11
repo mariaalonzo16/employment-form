@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import { FormContext } from '../../../context/FormContext';
 import { useContext, useState }from 'react';
+import './Range.scss'
 
 
 export const Ranges = () => {
@@ -23,7 +24,7 @@ export const Ranges = () => {
 
   return (
     <>
-      <p> What is your desired income?</p>
+      <p className='prompt'> What is your desired income?</p>
       <Box>
         <Slider
           aria-label="Salary"
@@ -31,10 +32,13 @@ export const Ranges = () => {
           getAriaValueText={handleValueText}
           valueLabelDisplay="auto"
           step={5}
-          marks
           min={50}
           max={150}
           onChange={handleDesiredIncome}
+          sx={{
+            width: 300,
+            color: 'success.main',
+          }}
         />
       </Box>
     </>

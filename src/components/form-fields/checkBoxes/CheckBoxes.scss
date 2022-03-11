@@ -7,13 +7,6 @@
     font-size: 16px;
 }
 
-span::after {
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid #a62626 !important;
-    border-bottom: 2px solid #a62626 !important;
-}
-
 label {
     color: black;
 }

@@ -1,5 +1,10 @@
 import './RadioGroups.scss';
 import { useRadioLogic } from '../../../functions/useRadioLogic';
+import { FormControl } from '@mui/material';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormLabel from '@mui/material/FormLabel';
 
 export const RadioGroups = () => {
 
@@ -12,7 +17,7 @@ export const RadioGroups = () => {
             <span className='radio-group'>
 
                 <div >
-                    <p>
+                    <p className='radio-button'>
                     <label>
                         <input 
                             name="group1" 
@@ -23,7 +28,7 @@ export const RadioGroups = () => {
                         <span> {'< 5'} </span>
                     </label>
                     </p>
-                    <p>
+                    <p className='radio-button'>
                     <label>
                         <input 
                             name="group1" 
@@ -34,7 +39,7 @@ export const RadioGroups = () => {
                         <span>5-9</span>
                     </label>
                     </p>
-                    <p>
+                    <p className='radio-button'>
                     <label>
                         <input 
                             name="group1" 
@@ -45,7 +50,7 @@ export const RadioGroups = () => {
                         <span>10-14</span>
                     </label>
                     </p>
-                    <p>
+                    <p className='radio-button'>
                     <label>
                         <input 
                             name="group1" 
@@ -56,8 +61,23 @@ export const RadioGroups = () => {
                         <span>15 or more</span>
                     </label>
                     </p>
-                </div>  
 
+
+                    
+                </div>  
+                {/* <FormControl>
+                    <FormLabel id="demo-radio-buttons-group-label">For how many years have you been practicing medicine?</FormLabel>
+                        <RadioGroup
+                            aria-labelledby="demo-radio-buttons-group-label"
+                            defaultValue="experience"
+                            name="radio-buttons-group"
+                        >
+                            <FormControlLabel value={'< 5'} control={<Radio />} label="Female" />
+                            <FormControlLabel value={'5-9'} control={<Radio />} label="Male" />
+                            <FormControlLabel value={'10-14'} control={<Radio />} label="Other" />
+                            <FormControlLabel value={'15 or more'}  control={<Radio />} label="Other" />
+                        </RadioGroup>
+                </FormControl> */}
 
 
             </span>
