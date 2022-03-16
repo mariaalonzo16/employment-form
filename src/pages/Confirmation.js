@@ -36,7 +36,7 @@ export const Confirmation = () => {
                 <p>Years Practiced: {formState.yearsPracticed}</p>
                 <p>Desired Income: {formState.desiredIncome}</p>
 
-                <Button
+                {/* <Button
                     node="button"
                     style={{
                     marginRight: '5px'
@@ -47,11 +47,18 @@ export const Confirmation = () => {
                 }}
                 >
                     Confirm
-                </Button>
+                </Button> */}
 
                 <Modal
                     actions={[
-                        <Button flat modal="close" node="button" waves="green">Close</Button>
+                        <Button 
+                            modal="close" 
+                            node="button" 
+                            waves="green"
+                            onClick={() => {navigate("/")}}
+                        >
+                            Close
+                        </Button>
                     ]}
                     bottomSheet={false}
                     fixedFooter={false}
@@ -79,7 +86,7 @@ export const Confirmation = () => {
                                 // onClick={homeRedirect}
                                 
                             >
-                                Tommy
+                                Confirm
                             </Button>
                         </div>
                     }
