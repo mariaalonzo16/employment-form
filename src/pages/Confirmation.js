@@ -35,6 +35,7 @@ export const Confirmation = () => {
                 ))}
                 <p>Years Practiced: {formState.yearsPracticed}</p>
                 <p>Desired Income: {formState.desiredIncome}</p>
+                <p>Resume: {formState.resumeCV}</p>
 
                 {/* <Button
                     node="button"

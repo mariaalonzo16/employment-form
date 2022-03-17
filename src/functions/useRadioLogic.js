@@ -11,9 +11,6 @@ export const useRadioLogic = () => {
     const handleChange = (e) => {
         setChecked(e.target.value)
 
-        console.log(e.target)
-        console.log(e.target.value)
-
     }
 
     const handleYearsPracticed = (e) => {

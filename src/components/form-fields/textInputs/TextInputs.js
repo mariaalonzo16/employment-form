@@ -1,7 +1,6 @@
 import { TextInput } from 'react-materialize';
-import React, { createContext, useContext, useState }from 'react';
+import React from 'react';
 import './TextInputs.scss';
-import { FormContext } from '../../../context/FormContext';
 import { useInputLogic } from '../../../functions/useInputLogic';
 
 
