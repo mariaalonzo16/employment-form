@@ -24,11 +24,17 @@ export const TopNav = () => {
                     preventScrolling: true
                 }}
                 >
-                <NavItem href="../">
+                <NavItem href="../" className='navItem'>
                     Home
                 </NavItem>
-                <NavItem href="../open-roles">
+                <NavItem href="../open-roles" className='navItem'>
                     Open Roles
+                </NavItem>
+                <NavItem href="" className='navItem'>
+                    About
+                </NavItem>
+                <NavItem href="" className='navItem'>
+                    Contact Us
                 </NavItem>
             </Navbar>
         </header>

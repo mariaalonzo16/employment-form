@@ -6,6 +6,10 @@ import { OpenRoles } from './pages/OpenRoles';
 import { Application } from './pages/Application';
 import { Confirmation } from './pages/Confirmation';
 import { FormContext } from './context/FormContext';
+import { pageRoutes } from './routes/pageRoutes';
+
+
+
 
 export const App = () => {
 
@@ -26,13 +30,15 @@ export const App = () => {
   return (
     <FormContext.Provider value={[formState, setFormState]}>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/open-roles" element={<OpenRoles />} />
-        <Route path="/application/*" element={<Application />} />
-        <Route path="/confirmation" element={<Confirmation />} />
+        {pageRoutes.map((route,index) => (
+          <Route 
+            key={index}
+            path={route.path}
+            element={route.element} 
+          />
+        ))}
       </Routes>
-      
-
+     
       {/* <Test1 /> */}
     </FormContext.Provider>
   );
