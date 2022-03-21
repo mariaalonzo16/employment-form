@@ -5,6 +5,7 @@ import { Button, Modal } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
 import { FormContext } from '../context/FormContext';
 import { Specialties } from '../data/Specialties';
+import { Helmet } from 'react-helmet';
 
 export const Confirmation = () => {
     let navigate = useNavigate();
@@ -22,6 +23,9 @@ export const Confirmation = () => {
 
     return (
         <>
+            <Helmet>
+                <title>codeHealth | Confirmation</title>
+            </Helmet>
             <TopNav />
             <main>
                 <p>Please Confirm your Information</p> 

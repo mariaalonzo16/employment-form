@@ -6,6 +6,7 @@ import { FileInput } from '../components/form-fields/fileInput/FileInput';
 import { Buttons } from '../components/form-fields/buttons/Buttons';
 import { Footers } from '../layouts/footer/Footers';
 import { Ranges } from '../components/form-fields/range/Ranges';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -23,6 +24,10 @@ export const Application = () => {
     const titleDisplay = jobTitle.join(" ");
     return (
         <>
+            <Helmet>
+                <title> codeHealth | Application</title>
+            </Helmet>
+
             <TopNav />
             
             <main> 

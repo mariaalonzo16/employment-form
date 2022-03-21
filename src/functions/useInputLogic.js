@@ -1,6 +1,6 @@
-import React, { useContext }from 'react';
+import { useContext }from 'react';
 import { FormContext } from '../context/FormContext';
-import { TextInputs } from '../components/form-fields/textInputs/TextInputs';
+
 
 
 export const useInputLogic = () => {
@@ -9,6 +9,7 @@ export const useInputLogic = () => {
 
     const handleFirstName = (e) => {
         const updatedForm = { ...formState, firstName:e.target.value}
+        console.log(updatedForm)
 
         setFormState(updatedForm);
     }

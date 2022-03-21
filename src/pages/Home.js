@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { NavButton } from '../components/form-fields/buttons/NavButton';
+import { Helmet } from 'react-helmet';
 
 export const Home = () => {
     
@@ -25,6 +26,9 @@ export const Home = () => {
     
     return (
             <>
+                <Helmet>
+                    <title> codeHealth | Home</title>
+                </Helmet>
                 <TopNav />
                 <main> 
                     <h1 id="greeting" className='heading'></h1> 

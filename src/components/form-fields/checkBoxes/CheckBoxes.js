@@ -34,6 +34,8 @@ export const CheckBoxes = () => {
         
         const updatedForm = { ...formState, specialties:checkboxDisplayState}
         setFormState(updatedForm);
+
+        console.log(updatedForm)
         
     }
 

@@ -4,12 +4,16 @@ import {  NavButton } from '../components/form-fields/buttons/NavButton';
 import { Footers } from '../layouts/footer/Footers';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Roles } from '../data/Roles';
+import { Helmet } from 'react-helmet';
 
 export const OpenRoles = () => {
-    console.log(Roles)
+
 
     return (
         <>
+            <Helmet>
+                <title> codeHealth | Open Roles</title>
+            </Helmet>
             <TopNav /> 
             <main>
                 <div>
