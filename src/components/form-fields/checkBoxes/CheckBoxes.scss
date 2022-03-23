@@ -1,3 +1,5 @@
+@use '../../../styles/colors/color.scss' as *;
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -8,5 +10,5 @@
 }
 
 label {
-    color: black;
+    color: $dark;
 }

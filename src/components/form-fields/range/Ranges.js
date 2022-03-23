@@ -36,8 +36,7 @@ export const Ranges = () => {
           max={150}
           onChange={handleDesiredIncome}
           sx={{
-            width: 300,
-            color: 'success.main',
+            width: 300
           }}
         />
       </Box>

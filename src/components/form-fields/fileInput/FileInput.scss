@@ -1,18 +1,15 @@
 @use '../../../styles/colors/color.scss' as *;
 
 .btn {
-    background-color: $button;
+    background-color: $secondary;
     width: 100%;
 }
 
 .btn:focus {
-    background-color: $button;
+    background-color: $secondary;
 }
 
 .btn:hover {
-    background-color: $button;
+    background-color: $secondary;
 }
 
-span.thumb.active{
-    background-color: purple;
-}

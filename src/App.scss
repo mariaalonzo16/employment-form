@@ -12,7 +12,7 @@ body {
 }
 
 .button{
-  background-color: $button;
+  background-color: $secondary;
   width: 100%;
   height: 10%;
   justify-content: center;
@@ -20,12 +20,12 @@ body {
 }
 
 .button:hover {
-  background-color: rgba(109, 194, 243, 0.904);
+  background-color: $hover;
 }
 
 .collapsible-header {
-  background-color: rgb(127, 195, 235);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+  background-color: $primary;
+  border-bottom: 1px solid $secondary;
   font-weight: 900;
 }
 
@@ -47,25 +47,6 @@ main {
   font-size: 20px;
   text-align: center;
 }
-
-// #root {
-//  height: 100vh;
-// };
-
-// #root {
-//   min-height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: stretch;
-// }
-
-// main {
-//   flex-grow: 1;
-// }
-
-// header, main, footer {
-//   flex-shrink: 0;
-// }
 
 #root {
   display: flex;

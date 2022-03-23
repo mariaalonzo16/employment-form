@@ -1,20 +1,22 @@
 @use '../../styles/colors/color.scss' as *;
 
 .Navbar {
-    background-color: $layout;
+    background-color: $primary;
 }
 
 .navItem {
     text-align: center;
+    font-size: 15px !important;
 }
 
 .navItem:hover {
-    color: $layout;
-    background-color: white !important;
+    color: $primary;
+    background-color: $light !important;
     font-size: 15px;
     font-weight: bolder;
 }
 
-// ul {
-//     padding: 80px 70px 80px 70px !important;
-// }
+#mobile-nav {
+    padding: 80px 70px 80px 70px !important;
+    background-color: $primary;
+}
