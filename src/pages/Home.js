@@ -1,13 +1,19 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { NavButton } from '../components/form-fields/buttons/NavButton';
 import { Helmet } from 'react-helmet';
 
 export const Home = () => {
+
+    const [loading, setLoading] = useState(true)
     
     const today = new Date()
     const currentHour = today.getHours()
+
+    useEffect(() => {
+      setTimeout(() => setLoading(false), 1000)
+    }, [])
 
     useEffect(() => {
         if (currentHour < 12) {
@@ -23,28 +29,42 @@ export const Home = () => {
         document.getElementById("greeting").innerHTML = "Welcome to codeHealth!"
     }
     setTimeout(myGreeting, 2000)
+
+
+
+    
+
+   
     
     return (
             <>
-                <Helmet>
-                    <title> codeHealth | Home</title>
-                </Helmet>
-                <TopNav />
-                <main> 
-                    <h1 id="greeting" className='heading'></h1> 
 
-                    <p className='welcome'>
-                        Stay up-to-date with codeHealth's  employment opportunities. 
-                    </p>
+                {/* {loading === true ? ( */}
+                <> 
+                    <Helmet>
+                        <title> codeHealth | Home</title>
+                    </Helmet>
+                    <TopNav />
 
-                    <NavButton
-                        innerText="Open Roles"
-                        route="/open-roles"
+                    <main> 
+                        <h1 id="greeting" className='heading'></h1> 
 
-                    />
+                        <p className='welcome'>
+                            Stay up-to-date with codeHealth's  employment opportunities. 
+                        </p>
 
-                </main>
-                <Footers />
+                        <NavButton
+                            innerText="Open Roles"
+                            route="/open-roles"
+
+                        />
+
+                    </main>
+                    <Footers />
+                </>
+                {/* ) : (
+                  <h1>maria</h1>  
+                )} */}
             </>
     );
     
