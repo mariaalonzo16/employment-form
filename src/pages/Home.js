@@ -11,24 +11,34 @@ export const Home = () => {
     const today = new Date()
     const currentHour = today.getHours()
 
-    useEffect(() => {
-      setTimeout(() => setLoading(false), 1000)
-    }, [])
 
-    useEffect(() => {
-        if (currentHour < 12) {
-            document.getElementById("greeting").innerHTML = "Good Morning!"
-        } else if (currentHour < 18) {
-            document.getElementById("greeting").innerHTML = "Good Afternoon!"
-        } else {
-            document.getElementById("greeting").innerHTML = "Good Evening!"
-        }
-    }, []);
-
-   const myGreeting = () => {
+    const myGreeting = () => {
         document.getElementById("greeting").innerHTML = "Welcome to codeHealth!"
     }
-    setTimeout(myGreeting, 2000)
+    
+
+    useEffect(() => {
+
+        setTimeout(() => setLoading(false), 5000)
+
+        if (currentHour < 12 && loading === false) {
+            document.getElementById("greeting").innerHTML = "Good Morning!";
+        } 
+        
+        else if (currentHour < 18 && loading === false) {
+            document.getElementById("greeting").innerHTML = "Good Afternoon!";
+        } 
+        
+        else if (currentHour >= 18 && loading  === false) {
+            document.getElementById("greeting").innerHTML = "Good Evening!";
+        }
+
+       
+        setTimeout(myGreeting, 6000) 
+        
+    }, [loading]);
+
+   
 
 
 
@@ -39,7 +49,7 @@ export const Home = () => {
     return (
             <>
 
-                {/* {loading === true ? ( */}
+                {loading === false ? (
                 <> 
                     <Helmet>
                         <title> codeHealth | Home</title>
@@ -62,10 +72,12 @@ export const Home = () => {
                     </main>
                     <Footers />
                 </>
-                {/* ) : (
-                  <h1>maria</h1>  
-                )} */}
+                ) : (
+                  <h1>maria</h1>
+                )}
             </>
     );
+
+    
     
 }
