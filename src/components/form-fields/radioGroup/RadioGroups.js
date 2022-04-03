@@ -1,10 +1,6 @@
 import './RadioGroups.scss';
 import { useRadioLogic } from '../../../functions/useRadioLogic';
-import { FormControl } from '@mui/material';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormLabel from '@mui/material/FormLabel';
+
 
 export const RadioGroups = () => {
 

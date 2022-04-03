@@ -4,7 +4,7 @@ import { FormContext } from '../context/FormContext';
 export const useRadioLogic = () => {
     const [ formState, setFormState] = useContext(FormContext)
 
-    const [ checked, setChecked] = useState('');
+    const [ setChecked] = useState('');
 
     
 

@@ -1,7 +1,7 @@
 import { TextInput } from 'react-materialize';
 import './FileInput.scss';
 import { FormContext } from '../../../context/FormContext';
-import { useContext, useState}from 'react';
+import { useContext }from 'react';
 
 export const FileInput = () => {
 
