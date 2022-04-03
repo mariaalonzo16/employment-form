@@ -3,6 +3,9 @@ import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { NavButton } from '../components/form-fields/buttons/NavButton';
 import { Helmet } from 'react-helmet';
+import { lottie }from "lottie-web";
+import { heartBeat } from "../lotties/heartBeat.json"
+import { LottieAnimation } from '../lotties/LottieAnimation';
 
 export const Home = () => {
 
