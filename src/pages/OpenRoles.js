@@ -16,7 +16,7 @@ export const OpenRoles = () => {
             </Helmet>
             <TopNav /> 
             <main>
-                <div>
+                <div className='roles-page'>
                     <h1 className='heading'>Open Roles</h1>
 
                     <Collapsible accordion>

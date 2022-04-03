@@ -28,31 +28,20 @@ export const Confirmation = () => {
             </Helmet>
             <TopNav />
             <main>
-                <p>Please Confirm your Information</p> 
-                <p>First Name: {formState.firstName}</p>
-                <p>Last Name: {formState.lastName}</p>
-                <p>Email: {formState.email}</p>
-                <p>Phone Number: {formState.phoneNumber}</p>
+                <div className='confirmation'>
+                    <p>Please Confirm your Information</p> 
+                    <p>First Name: {formState.firstName}</p>
+                    <p>Last Name: {formState.lastName}</p>
+                    <p>Email: {formState.email}</p>
+                    <p>Phone Number: {formState.phoneNumber}</p>
 
-                {formState.specialties.map((interest,index) => (
-                    <p key={index}>Specialty of Interest: {interest} </p>
-                ))}
-                <p>Years Practiced: {formState.yearsPracticed}</p>
-                <p>Desired Income: {formState.desiredIncome}</p>
-                <p>Resume: {formState.resumeCV}</p>
-
-                {/* <Button
-                    node="button"
-                    style={{
-                    marginRight: '5px'
-                    }}
-                    waves="light"
-                    onClick={() => {
-                    navigate("/")
-                }}
-                >
-                    Confirm
-                </Button> */}
+                    {formState.specialties.map((interest,index) => (
+                        <p key={index}>Specialty of Interest: {interest} </p>
+                    ))}
+                    <p>Years Practiced: {formState.yearsPracticed}</p>
+                    <p>Desired Income: {formState.desiredIncome}</p>
+                    <p>Resume: {formState.resumeCV}</p>
+                </div>
 
                 <Modal
                     actions={[
@@ -61,6 +50,7 @@ export const Confirmation = () => {
                             node="button" 
                             waves="green"
                             onClick={() => {navigate("/")}}
+                            className='confirmation'
                         >
                             Close
                         </Button>

@@ -33,7 +33,7 @@ export const TopNav = () => {
                     <NavItem href="../" className='navItem'>
                         About
                     </NavItem>
-                    <NavItem href="../" className='navItem'>
+                    <NavItem href="../" className='navContact'>
                         Contact Us
                     </NavItem> 
             </Navbar>    

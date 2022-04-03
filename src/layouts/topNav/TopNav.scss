@@ -4,9 +4,16 @@
     background-color: $primary;
 }
 
+.navContact {
+    margin-right: 20px; 
+    text-align: center;
+    font-size: 15px !important;
+}
+
 .navItem {
     text-align: center;
     font-size: 15px !important;
+    
 }
 
 .navItem:hover {
@@ -14,6 +21,10 @@
     background-color: $light !important;
     font-size: 15px;
     font-weight: bolder;
+}
+
+.brand-logo {
+    margin-left: 20px;
 }
 
 #mobile-nav {

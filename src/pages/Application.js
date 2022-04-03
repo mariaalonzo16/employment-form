@@ -31,15 +31,17 @@ export const Application = () => {
             <TopNav />
             
             <main> 
+
+                <div className='application'>
                 
-                <h1 className='heading'> {titleDisplay}</h1>
-                <TextInputs />
-                <CheckBoxes />
-                <RadioGroups />
-                <Ranges />
-                <FileInput />
-                <Buttons />
-   
+                    <h1 className='heading'> {titleDisplay}</h1>
+                    <TextInputs />
+                    <CheckBoxes />
+                    <RadioGroups />
+                    <Ranges />
+                    <FileInput />
+                    <Buttons />
+                </div>
             </main>
             <Footers />
         </>

@@ -1,5 +1,9 @@
 @use './styles/colors/color.scss' as *;
 
+.application {
+  max-width: 800px;
+  margin: auto;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,9 +33,20 @@ body {
   font-weight: 900;
 }
 
+.confirmation {
+  max-width: 800px;
+  margin: auto;
+}
+
 .heading {
   font-size: 40px;
   text-align: center;
+}
+
+.home-page{
+  max-width: 500px;
+  max-inline-size: fit-content;
+  margin: auto;
 }
 
 main {
@@ -41,6 +56,11 @@ main {
 
 .subtitle {
   font-weight: 900;
+}
+
+.roles-page {
+  max-width: 600px;
+  margin: auto;
 }
 
 .welcome {

@@ -58,18 +58,19 @@ export const Home = () => {
                     <TopNav />
 
                     <main> 
-                        <h1 id="greeting" className='heading' />
+                        <div className='home-page'>
+                            <h1 id="greeting" className='heading' />
 
-                        <p className='welcome'>
-                            Stay up-to-date with codeHealth's  employment opportunities. 
-                        </p>
+                            <p className='welcome'>
+                                Stay up-to-date with codeHealth's  employment opportunities. 
+                            </p>
 
-                        <NavButton
-                            innerText="Open Roles"
-                            route="/open-roles"
+                            <NavButton
+                                innerText="Open Roles"
+                                route="/open-roles"
 
-                        />
-
+                            />
+                        </div>
                     </main>
                     <Footers />
                 </>
