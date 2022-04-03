@@ -3,9 +3,7 @@ import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { NavButton } from '../components/form-fields/buttons/NavButton';
 import { Helmet } from 'react-helmet';
-import { lottie }from "lottie-web";
-import { heartBeat } from "../lotties/heartBeat.json"
-import { LottieAnimation } from '../lotties/LottieAnimation';
+
 
 export const Home = () => {
 
@@ -22,7 +20,7 @@ export const Home = () => {
 
     useEffect(() => {
 
-        setTimeout(() => setLoading(false), 5000)
+        setTimeout(() => setLoading(false), 2000)
 
         if (currentHour < 12 && loading === false) {
             document.getElementById("greeting").innerHTML = "Good Morning!";
@@ -37,7 +35,7 @@ export const Home = () => {
         }
 
        
-        setTimeout(myGreeting, 6000) 
+        setTimeout(myGreeting, 4000) 
         
     }, [loading]);
 
@@ -60,7 +58,7 @@ export const Home = () => {
                     <TopNav />
 
                     <main> 
-                        <h1 id="greeting" className='heading'></h1> 
+                        <h1 id="greeting" className='heading' />
 
                         <p className='welcome'>
                             Stay up-to-date with codeHealth's  employment opportunities. 
@@ -76,7 +74,7 @@ export const Home = () => {
                     <Footers />
                 </>
                 ) : (
-                  <h1>maria</h1>
+                  <h1>Loading Screen</h1>
                 )}
             </>
     );

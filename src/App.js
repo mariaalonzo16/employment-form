@@ -1,9 +1,8 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
-import React, {  useState, useEffect, useRef }from 'react';
+import React, {  useState }from 'react';
 import { FormContext } from './context/FormContext';
 import { pageRoutes } from './routes/pageRoutes';
-import Lottie from 'lottie-web';
 
 
 

@@ -3,7 +3,6 @@ import React, {useState, useContext} from 'react';
 import { FormContext } from '../../../context/FormContext';
 import './CheckBoxes.scss';
 import { Specialties } from '../../../data/Specialties';
-import { useCheckBoxLogic } from '../../../functions/useCheckBoxLogic';
 
 export const CheckBoxes = () => {
 
@@ -39,12 +38,6 @@ export const CheckBoxes = () => {
         
     }
 
-    // const {
-    //     handleChecked,
-    //     isChecked
-    // } = useCheckBoxLogic()
-
- 
       
     return (
         <>
