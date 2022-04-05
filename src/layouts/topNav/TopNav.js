@@ -30,10 +30,10 @@ export const TopNav = () => {
                     <NavItem href="../open-roles" className='navItem'>
                         Open Roles
                     </NavItem>
-                    <NavItem href="../" className='navItem'>
+                    <NavItem href="" className='navItem'>
                         About
                     </NavItem>
-                    <NavItem href="../" className='navContact'>
+                    <NavItem href="" className='navContact'>
                         Contact Us
                     </NavItem> 
             </Navbar>    

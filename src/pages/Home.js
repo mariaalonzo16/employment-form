@@ -20,7 +20,7 @@ export const Home = () => {
 
     useEffect(() => {
 
-        setTimeout(() => setLoading(false), 2000)
+        setTimeout(() => setLoading(false), 1000)
 
         if (currentHour < 12 && loading === false) {
             document.getElementById("greeting").innerHTML = "Good Morning!";
