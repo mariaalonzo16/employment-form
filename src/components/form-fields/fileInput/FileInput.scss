@@ -1,15 +1,19 @@
 @use '../../../styles/colors/color.scss' as *;
 
-.btn {
-    background-color: $secondary;
-    align-items: center;
-}
+// .file-input {
+//     background-color: $secondary !important;
+//     align-items: center;
+//     max-width: 500px;
+//     max-inline-size: fit-content;
+//     margin: auto;
+//     text-align: center;
+// }
 
-.btn:focus {
-    background-color: $secondary;
-}
+// .file-input:focus {
+//     background-color: $secondary;
+// }
 
-.btn:hover {
-    background-color: $secondary;
-}
+// .file-input:hover {
+//     background-color: $secondary;
+// }
 

@@ -5,7 +5,7 @@ import './Buttons.scss';
 export const Buttons = () => {
     let navigate = useNavigate();
     return (
-        <>
+        <div className='home-page'>
             <Button
                 className='buttons'
                 node="button"
@@ -16,6 +16,6 @@ export const Buttons = () => {
             >
                 Submit
              </Button>
-        </>
+        </div>
     );
 }

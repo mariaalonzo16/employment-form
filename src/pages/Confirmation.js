@@ -28,6 +28,7 @@ export const Confirmation = () => {
             </Helmet>
             <TopNav />
             <main>
+            <div className='home-page'>
                 <div className='confirmation'>
                     <p>Please Confirm your Information</p> 
                     <p>First Name: {formState.firstName}</p>
@@ -50,7 +51,6 @@ export const Confirmation = () => {
                             node="button" 
                             waves="green"
                             onClick={() => {navigate("/")}}
-                            className='confirmation'
                         >
                             Close
                         </Button>
@@ -60,6 +60,7 @@ export const Confirmation = () => {
                     header="Modal Header"
                     id="Modal-10"
                     open={false}
+                    className='confirmation'
                     options={{
                         dismissible: true,
                         endingTop: '10%',
@@ -85,12 +86,13 @@ export const Confirmation = () => {
                             </Button>
                         </div>
                     }
-                >
+                    >
                     
                     <p>
                        Thank You for your Submission!
                     </p>
-                </Modal>
+                    </Modal>
+                </div>
             </main>
             <Footers />
             

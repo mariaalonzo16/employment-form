@@ -25,6 +25,7 @@ export const OpenRoles = () => {
                                 expanded={false}
                                 header={role.title}
                                 key={index}
+                                
                             >
                             <p className='subtitle'> Job Description: </p>
                             <p> {role.description}
@@ -47,12 +48,12 @@ export const OpenRoles = () => {
                             <p> Paid time off </p>
                             <p> Retirement plan </p>
 
-                            <NavButton 
-                                innerText="Apply Now"
-                                route={"/application?q=" + role.link}
-                            />
-
-
+                            <div className='home-page'>
+                                <NavButton 
+                                    innerText="Apply Now"
+                                    route={"/application?q=" + role.link}
+                                />
+                            </div>
                         </CollapsibleItem>
                         ))}
                     </Collapsible>

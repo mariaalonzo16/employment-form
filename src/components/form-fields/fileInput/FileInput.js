@@ -16,13 +16,15 @@ export const FileInput = () => {
 
    
     return (
-        <span className="submit-button">
+        <span >
             <TextInput
-                    id="TextInput-26"
-                    label="Submit Resume"
-                    type="file"
-                    onChange={handleResumeCV} 
-                />
+                id="TextInput-26"
+                label="Submit Resume"
+                type="file"
+                onChange={handleResumeCV}
+                validate={false}
+                
+            />
         </span>
     );
 }

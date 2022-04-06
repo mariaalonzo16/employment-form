@@ -6,20 +6,15 @@ export const NavButton = (props) => {
 
     let navigate = useNavigate();
     return (
-        <>
-            <Button
-                className='button'
-                node="button"
-                style={{
-                marginRight: '5px'
-                }}
-                waves="light"
-                onClick={() => {
-                    navigate(`${props.route}`)
-                }}
-            >
-                {props.innerText}
-            </Button>
-        </>
+        <Button
+            className='button'
+            node="button"
+            waves="light"
+            onClick={() => {
+                navigate(`${props.route}`)
+            }}
+        >
+            {props.innerText}
+        </Button>
     );
 }

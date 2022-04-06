@@ -6,6 +6,10 @@
     height: 4%;
     justify-content: center;
     align-items: center;
+    max-width: 500px;
+    max-inline-size: fit-content;
+    margin: auto;
+    text-align: center;
 }
 
 .buttons:hover {
