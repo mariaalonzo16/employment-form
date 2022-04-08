@@ -6,14 +6,16 @@
 
 ## Description
 
-Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, array mapping and much more. 
+Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, and array mapping.
+
+useEffect was used to tell the Home component to render a greeting after a certain time. Alongside useEffect an if/else statement was used to specify the hour of when the greeting should render on the screen. useState allowed us to have different state values within our functional components. Each time an inputs gets submitted in our Application component it gets confirmed in the Confirmation page. Context API allowed us to pass global variables (which included text inputs radio buttons, checkboxes and file inputs) along different components. 
 
 
 ## Preview
 
-![Employment Form]()
+![Employment Form](https://user-images.githubusercontent.com/93888269/162349755-a067f298-1463-41ff-9b23-486b5a919db4.mp4)
 
-[Live Preview](https://mariaalonzo16.github.io/employment-form/)
+[Live Preview](https://employment-form.netlify.app/)
 
 ## Business Use Case
 

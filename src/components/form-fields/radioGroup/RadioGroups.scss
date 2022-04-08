@@ -1,3 +1,5 @@
+@use '../../../styles/colors/color.scss' as *;
+
 .radio-group {
     display: flex;
     align-items: center;
@@ -18,14 +20,15 @@
     margin-top: 25px;
 }
 
-// p{
-//     margin-bottom: 1px;
-//     padding: 0px;
-//     margin-top: 1px;
-    
-    
-// }
-
 #text {
     font-size: 16px;
+}
+
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid $primary !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: $primary !important;
 }

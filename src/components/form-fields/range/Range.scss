@@ -5,3 +5,13 @@
 .prompt {
     margin-top: 35px;
 }
+
+.css-10eikzx-MuiSlider-root {
+    color: #7fb2ff !important;
+}
+
+input[type=text].valid:not(.browser-default){
+    background-color: white;
+    border-bottom: white;
+    box-shadow: 0 1px 0 0 white;
+}

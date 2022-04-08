@@ -49,13 +49,10 @@ export const CheckBoxes = () => {
                         id={`specialty-checkbox-${index}`}
                         value={specialty}
                         checked={isChecked[index]}
-                        onChange={() => handleChecked(index)}
-                        
+                        onChange={() => handleChecked(index)}        
                     />
                 </span>
             ))}
-           
-        
         </>
     );
 }
