@@ -8,19 +8,27 @@
 
 Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, and array mapping.
 
-useEffect was used to tell the Home component to render a greeting after a certain time. Alongside useEffect an if/else statement was used to specify the hour of when the greeting should render on the screen. useState allowed us to have different state values within our functional components. Each time an inputs gets submitted in our Application component it gets confirmed in the Confirmation page. Context API allowed us to pass global variables (which included text inputs radio buttons, checkboxes and file inputs) along different components. 
+useEffect was used to tell the Home component to render a greeting after a certain time. Alongside useEffect, an if-else statement was used to specify the hour of when the greeting should render on the screen. Each time the form is submitted in the Application component it gets confirmed in the Confirmation page. 
+
+useState 
+array mapping
+different folder for components
+context api to manage global state
+custome hooks functions folder
+react router to render idiffrent pages
+module
+SASS one file that has all the 
 
 
 ## Preview
 
-![Employment Form](https://user-images.githubusercontent.com/93888269/162349755-a067f298-1463-41ff-9b23-486b5a919db4.mp4)
+[Employment Form](https://user-images.githubusercontent.com/93888269/162349755-a067f298-1463-41ff-9b23-486b5a919db4.mp4)
 
 [Live Preview](https://employment-form.netlify.app/)
 
 ## Business Use Case
 
-- Employment Form provides clients with an interface that can be implemented during their search for new talent.
-- Can be used as a screening tool that can determine if the applicant is suitable for an interview.
+- Provides potential employers with an interface that can be implemented during their search for new talent
 
 ## Status
 
@@ -36,13 +44,16 @@ useEffect was used to tell the Home component to render a greeting after a certa
 
 ## Usage
 
-After the project files are cloned, feel free to edit the JavaScript and SASS files included within the `src` directory to edit the website as you see fit. To preview the changes you make to the code, you can start `npm start` in terminal.
+After the project files are cloned, feel free to edit the JavaScript and SASS files included within the `src` directory to edit the website as you see fit. To preview the changes you make to the code, you can run `npm start` in terminal.
 
+run npm install
 ## Roadmap
 
 Employment Form remains an on-going project, open to contributions.  Functionality that could improve the UX include the following:
 
-1) Store data after applicants submits application on a back end server. 
+1) Store data after applicants submits application in a back-end server. 
+add authentication
+fetch open role data from a database
 
 ## Bugs and Issues
 
@@ -55,7 +66,7 @@ Please make sure to update tests as appropriate.
 
 ## About
 
-Travel Gallery was created by and is maintained by [Maria Alonzo](https://www.linkedin.com/in/maria-jose-alonzo-claudino/).
+Employment Form was created by and is maintained by [Maria Alonzo](https://www.linkedin.com/in/maria-jose-alonzo-claudino/).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
