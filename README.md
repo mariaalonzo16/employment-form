@@ -1,4 +1,4 @@
-[Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2)
+![Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2)
 
 <p align="center"> Employment Form is a responsive web application that offers users an easy way to apply for three open roles in the company codeHealth. </p>
 
