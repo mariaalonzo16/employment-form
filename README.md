@@ -1,4 +1,4 @@
-![Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2))
+![Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2)
 
 <p align="center"> Employment Form is a responsive web application that offers users an easy way to apply for three open roles in the company codeHealth. </p>
 
@@ -46,7 +46,6 @@ SASS one file that has all the
 
 After the project files are cloned, feel free to edit the JavaScript and SASS files included within the `src` directory to edit the website as you see fit. To preview the changes you make to the code, you can run `npm start` in terminal.
 
-run npm install
 ## Roadmap
 
 Employment Form remains an on-going project, open to contributions.  Functionality that could improve the UX include the following:
