@@ -1,4 +1,4 @@
-![Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2)
+[Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2)
 
 <p align="center"> Employment Form is a responsive web application that offers users an easy way to apply for three open roles in the company codeHealth. </p>
 
@@ -8,16 +8,15 @@
 
 Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, and array mapping.
 
-useEffect was used to tell the Home component to render a greeting after a certain time. Alongside useEffect, an if-else statement was used to specify the hour of when the greeting should render on the screen. Each time the form is submitted in the Application component it gets confirmed in the Confirmation page. 
+useState provided it the opportunity to render our components to our confirmation page. Array mapping facilitated a simple way to access data from roles and specilaties file. Context API helped us managed the global state of the application. Created custom hooks to separate the logic from the components.
 
-useState 
-array mapping
+<!-- Creating diffrent folders for components made it easier to 
+
+
 different folder for components
-context api to manage global state
-custome hooks functions folder
 react router to render idiffrent pages
 module
-SASS one file that has all the 
+SASS one file that has all the  -->
 
 
 ## Preview
