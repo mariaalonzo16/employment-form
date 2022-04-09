@@ -1,4 +1,4 @@
-![Employment Form](https://user-images.githubusercontent.com/93888269/162111023-5c5be01f-3bbb-4fc4-a9ba-ee0f0b480987.png)
+![Employment Form](https://user-images.githubusercontent.com/93888269/162584572-8916e7c7-7ae4-4c30-ba82-2a49378de76d.png"2))
 
 <p align="center"> Employment Form is a responsive web application that offers users an easy way to apply for three open roles in the company codeHealth. </p>
 
@@ -52,8 +52,8 @@ run npm install
 Employment Form remains an on-going project, open to contributions.  Functionality that could improve the UX include the following:
 
 1) Store data after applicants submits application in a back-end server. 
-add authentication
-fetch open role data from a database
+2) Add authentication
+3) Fetch open role data from a database
 
 ## Bugs and Issues
 
