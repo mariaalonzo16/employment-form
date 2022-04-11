@@ -47,6 +47,7 @@ body {
 }
 
 
+//personal
 
 .collapsible-header {
   background-color: $primary;
@@ -58,6 +59,10 @@ body {
 .confirmation {
   max-width: 500px;
   margin: auto;
+}
+
+.confirm-heading {
+  font-size: 40px;
 }
 
 .heading {
@@ -94,5 +99,5 @@ main {
 #root {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
 }

@@ -30,18 +30,20 @@ export const Confirmation = () => {
             <main>
             <div className='home-page'>
                 <div className='confirmation'>
-                    <p>Please Confirm your Information</p> 
-                    <p>First Name: {formState.firstName}</p>
-                    <p>Last Name: {formState.lastName}</p>
-                    <p>Email: {formState.email}</p>
-                    <p>Phone Number: {formState.phoneNumber}</p>
+                    <h3 className='confirm-heading'>Please Confirm your Information</h3> 
+                    <div className='confirm-info'>
+                        <p>First Name: {formState.firstName}</p>
+                        <p>Last Name: {formState.lastName}</p>
+                        <p>Email: {formState.email}</p>
+                        <p>Phone Number: {formState.phoneNumber}</p>
 
-                    {formState.specialties.map((interest,index) => (
-                        <p key={index}>Specialty of Interest: {interest} </p>
-                    ))}
-                    <p>Years Practiced: {formState.yearsPracticed}</p>
-                    <p>Desired Income: {formState.desiredIncome}</p>
-                    <p>Resume: {formState.resumeCV}</p>
+                        {formState.specialties.map((interest,index) => (
+                            <p key={index}>Specialty of Interest: {interest} </p>
+                        ))}
+                        <p>Years Practiced: {formState.yearsPracticed}</p>
+                        <p>Desired Income: {formState.desiredIncome}</p>
+                        <p>Resume: {formState.resumeCV}</p>
+                    </div>
                 </div>
 
                 <Modal
@@ -57,7 +59,7 @@ export const Confirmation = () => {
                     ]}
                     bottomSheet={false}
                     fixedFooter={false}
-                    header="Modal Header"
+                    header="Thank you for your submission!"
                     id="Modal-10"
                     open={false}
                     className='confirmation'
@@ -88,9 +90,9 @@ export const Confirmation = () => {
                     }
                     >
                     
-                    <p>
+                    {/* <p>
                        Thank You for your Submission!
-                    </p>
+                    </p> */}
                     </Modal>
                 </div>
             </main>

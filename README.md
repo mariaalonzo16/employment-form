@@ -8,20 +8,19 @@
 
 Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, and array mapping.
 
-useState provided it the opportunity to render our components to our confirmation page. Array mapping facilitated a simple way to access data from roles and specilaties file. Context API helped us managed the global state of the application. Created custom hooks to separate the logic from the components.
+useState provided the opportunity to render our components to our confirmation page. Array mapping facilitated a simple way to access data from Roles and Specilaties file. Context API helped managed the global state of the application. Created custom hooks to separate the logic from the components which made the code much cleaner and easier to understand. React Router was used to render diffrent pages. Finally a SASS file was created for all the colors that are used thorughout the application.
 
 <!-- Creating diffrent folders for components made it easier to 
 
 
 different folder for components
-react router to render idiffrent pages
 module
 SASS one file that has all the  -->
 
 
 ## Preview
 
-[Employment Form](https://user-images.githubusercontent.com/93888269/162349755-a067f298-1463-41ff-9b23-486b5a919db4.mp4)
+[Employment Form](https://user-images.githubusercontent.com/93888269/162657649-81bb8446-02b0-457c-bd9d-a29d72eccafa.mp4)
 
 [Live Preview](https://employment-form.netlify.app/)
 
