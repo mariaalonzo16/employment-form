@@ -50,7 +50,7 @@ export const Home = () => {
     return (
             <>
 
-                {loading === false ? (
+                {/* {loading === false ? ( */}
                 <> 
                     <Helmet>
                         <title> codeHealth | Home</title>
@@ -74,9 +74,10 @@ export const Home = () => {
                     </main>
                     <Footers />
                 </>
-                ) : (
-                  <h1>Loading Screen</h1>
-                )}
+                {/* ) : ( */}
+                  {/* <h1>Loading Screen</h1> */}
+                ) 
+                
             </>
     );
 
