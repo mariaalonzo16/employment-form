@@ -3,6 +3,8 @@ import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { NavButton } from '../components/form-fields/buttons/NavButton';
 import { Helmet } from 'react-helmet';
+import Lottie from 'lottie-react';
+import animationHeart from '../lotties/heart.json';
 
 
 export const Home = () => {
@@ -20,7 +22,7 @@ export const Home = () => {
 
     useEffect(() => {
 
-        setTimeout(() => setLoading(false), 1000)
+        setTimeout(() => setLoading(false), 4000)
 
         if (currentHour < 12 && loading === false) {
             document.getElementById("greeting").innerHTML = "Good Morning!";
@@ -39,18 +41,10 @@ export const Home = () => {
         
     }, [loading]);
 
-   
-
-
-
-    
-
-   
-    
     return (
             <>
 
-                {/* {loading === false ? ( */}
+                {loading === false ? (
                 <> 
                     <Helmet>
                         <title> codeHealth | Home</title>
@@ -74,9 +68,17 @@ export const Home = () => {
                     </main>
                     <Footers />
                 </>
-                {/* ) : ( */}
-                  {/* <h1>Loading Screen</h1> */}
-                ) 
+                ) : ( 
+                  <div>
+                    <Lottie 
+                        animationData={animationHeart}
+                        height={400}
+                        width={400}
+                        className='home-page'
+                    />
+                  </div>
+                  
+                )}
                 
             </>
     );
