@@ -5,6 +5,7 @@ import { NavButton } from '../components/form-fields/buttons/NavButton';
 import { Helmet } from 'react-helmet';
 import Lottie from 'lottie-react';
 import animationHeart from '../lotties/heart.json';
+import $ from 'jquery';
 
 
 export const Home = () => {
@@ -36,10 +37,23 @@ export const Home = () => {
             document.getElementById("greeting").innerHTML = "Good Evening!";
         }
 
-       
-        setTimeout(myGreeting, 4000) 
+       setTimeout(myGreeting, 4000) 
         
     }, [loading]);
+
+    
+
+    
+
+    // const jQuerycode = () => {
+    //     $('.greeting').load(function(){
+    //     $('.greeting').fadeIn('slow')
+    //     }) 
+    // }
+
+    // console.log(jQuerycode)
+
+     
 
     return (
             <>
