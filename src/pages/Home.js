@@ -5,10 +5,12 @@ import { NavButton } from '../components/form-fields/buttons/NavButton';
 import { Helmet } from 'react-helmet';
 import Lottie from 'lottie-react';
 import animationHeart from '../lotties/heart.json';
-import $ from 'jquery';
+import { Greeting } from '../components/greeting/Greeting';
+
 
 
 export const Home = () => {
+
 
     const [loading, setLoading] = useState(true)
     
@@ -20,7 +22,6 @@ export const Home = () => {
         document.getElementById("greeting").innerHTML = "Welcome to codeHealth!"
     }
     
-
     useEffect(() => {
 
         setTimeout(() => setLoading(false), 4000)
@@ -41,29 +42,6 @@ export const Home = () => {
         
     }, [loading]);
 
-
-
-    const [fadeProp, setFadeProp] = useState({
-        fade: 'fade-in',
-    })
-
-    useEffect(() => {
-        const timeout = setInterval(() => {
-           if (fadeProp.fade === 'fade-in') {
-              setFadeProp({
-                   fade: 'fade-out'
-              })
-           } else {
-                setFadeProp({
-                   fade: 'fade-in'
-                })
-           }
-        }, 4000);
-   
-   return () => clearInterval(timeout)
-   }, [fadeProp])
-    
-
     return (
             <>
 
@@ -76,7 +54,7 @@ export const Home = () => {
 
                     <main> 
                         <div className='home-page'>
-                            <h1 id="greeting" className='heading'> {fadeProp.fade}</h1> 
+                        <h1 id="greeting" className='heading'> Hello!</h1>
 
                             <p className='welcome'>
                                 Stay up-to-date with codeHealth's  employment opportunities. 

@@ -12,9 +12,9 @@ export const RadioGroups = () => {
             <p className='number-years'>For how many years have you been practicing medicine?</p>
             <span className='radio-group'>
 
-                <div >
+                <div>
                     <p className='radio-button'>
-                    <label>
+                    <label className='radio-label'>
                         <input 
                             name="group1" 
                             type="radio" 
@@ -25,7 +25,7 @@ export const RadioGroups = () => {
                     </label>
                     </p>
                     <p className='radio-button'>
-                    <label>
+                    <label className='radio-label'>
                         <input 
                             name="group1" 
                             type="radio" 
@@ -36,7 +36,7 @@ export const RadioGroups = () => {
                     </label>
                     </p>
                     <p className='radio-button'>
-                    <label>
+                    <label className='radio-label'>
                         <input 
                             name="group1" 
                             type="radio" 
@@ -47,7 +47,7 @@ export const RadioGroups = () => {
                     </label>
                     </p>
                     <p className='radio-button'>
-                    <label>
+                    <label className='radio-label'>
                         <input 
                             name="group1" 
                             type="radio" 
