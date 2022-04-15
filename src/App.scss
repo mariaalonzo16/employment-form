@@ -69,6 +69,15 @@ body {
   text-align: left !important;
 }
 
+.fade-in {
+  transition: opacity 4s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 4s ease;
+}
+
 .heading {
   font-size: 40px;
   text-align: center;

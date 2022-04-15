@@ -22,5 +22,12 @@
   </body>
   
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('h1').load(function(){
+        $('#greeting').fadeIn(3000);
+      })
+    })
+  </script>
   <script src="js/materialize.js"></script>
 </html>

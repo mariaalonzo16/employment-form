@@ -41,19 +41,28 @@ export const Home = () => {
         
     }, [loading]);
 
+
+
+    const [fadeProp, setFadeProp] = useState({
+        fade: 'fade-in',
+    })
+
+    useEffect(() => {
+        const timeout = setInterval(() => {
+           if (fadeProp.fade === 'fade-in') {
+              setFadeProp({
+                   fade: 'fade-out'
+              })
+           } else {
+                setFadeProp({
+                   fade: 'fade-in'
+                })
+           }
+        }, 4000);
+   
+   return () => clearInterval(timeout)
+   }, [fadeProp])
     
-
-    
-
-    // const jQuerycode = () => {
-    //     $('.greeting').load(function(){
-    //     $('.greeting').fadeIn('slow')
-    //     }) 
-    // }
-
-    // console.log(jQuerycode)
-
-     
 
     return (
             <>
@@ -67,7 +76,7 @@ export const Home = () => {
 
                     <main> 
                         <div className='home-page'>
-                            <h1 id="greeting" className='heading' />
+                            <h1 id="greeting" className='heading'> {fadeProp.fade}</h1> 
 
                             <p className='welcome'>
                                 Stay up-to-date with codeHealth's  employment opportunities. 
