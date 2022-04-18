@@ -1,47 +1,42 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
+import { useState,useContext } from 'react';
+import { useRangeLogic } from '../../../functions/useRangeLogic';
 import { FormContext } from '../../../context/FormContext';
-import { useContext  }from 'react';
-import './Range.scss'
 
 
-export const Ranges = () => {
+export const Ranges = (props) => {
 
-  const [ formState, setFormState] = useContext(FormContext);
 
-  const handleValueText = (value) => {
-    console.log(value)
-  }
+  const { handleRange } = useRangeLogic();
 
-  const handleDesiredIncome = (e) => {
-    const updatedForm = { ...formState, desiredIncome:e.target.value}
+  const [ formState ] = useContext(FormContext)
 
-    setFormState(updatedForm);
-    
-  }
+  console.log(formState.desiredIncome)
+
+  const valueLabelFormat = () => '$' + formState.desiredIncome + 'K';
   
-
   return (
-    <>
-      <p className='prompt'> What is your desired income?</p>
-      <Box>
-        <Slider
-          aria-label="Salary"
-          defaultValue={50}
-          getAriaValueText={handleValueText}
-          valueLabelDisplay="auto"
-          step={5}
-          min={50}
-          max={150}
-          onChange={handleDesiredIncome}
-          sx={{
-            width: 300
-          }}
-        />
-      </Box>
-    </>
-  );
+    <div>
+    <Box sx={{ width: 250 }}>
+      <Typography id="non-linear-slider" gutterBottom>
+        What is your desired income? 
+      </Typography>
+      <Slider
+        min={50}
+        step={5}
+        max={150}
+        getAriaValueText={valueLabelFormat}
+        valueLabelFormat={valueLabelFormat}
+        onChange={handleRange}
+        valueLabelDisplay="auto"
+        aria-labelledby="non-linear-slider"
+      />
+    </Box>
+
     
-      
+    </div>
+  );
 }

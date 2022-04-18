@@ -15,7 +15,7 @@ export const App = () => {
    phoneNumber: '',
    specialties: [],
    yearsPracticed: '',
-   desiredIncome: '',
+   desiredIncome:'50',
    resumeCV: ''
   }
 

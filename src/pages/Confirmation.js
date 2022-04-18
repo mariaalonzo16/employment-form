@@ -12,6 +12,8 @@ export const Confirmation = () => {
 
     const [ formState ] = useContext(FormContext)
 
+    console.log(formState)
+
     for (let i=0; i < Specialties.length; i++) {
         const checkedSpecialties = []
         if (formState.specialties[i]) {
@@ -41,7 +43,7 @@ export const Confirmation = () => {
                             <p key={index}>Specialty of Interest: {interest} </p>
                         ))}
                         <p>Years Practiced: {formState.yearsPracticed}</p>
-                        <p>Desired Income: {formState.desiredIncome}</p>
+                        <p>Desired Income: ${formState.desiredIncome}K</p>
                         <p>Resume: {formState.resumeCV}</p>
                     </div>
                 </div>
