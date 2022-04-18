@@ -7,14 +7,12 @@ import { useRangeLogic } from '../../../functions/useRangeLogic';
 import { FormContext } from '../../../context/FormContext';
 
 
-export const Ranges = (props) => {
+export const Ranges = () => {
 
 
   const { handleRange } = useRangeLogic();
 
   const [ formState ] = useContext(FormContext)
-
-  console.log(formState.desiredIncome)
 
   const valueLabelFormat = () => '$' + formState.desiredIncome + 'K';
   

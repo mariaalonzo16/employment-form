@@ -69,15 +69,6 @@ body {
   text-align: left !important;
 }
 
-.fade-in {
-  transition: opacity 1s ease;
-}
-
-.fade-out {
-  opacity: 0;
-  transition: opacity 4s ease;
-}
-
 .heading {
   font-size: 40px;
   text-align: center;
@@ -113,4 +104,37 @@ main {
   display: flex;
   flex-direction: column;
   height: 110vh;
+}
+
+
+  
+
+#greeting {
+  animation-name: fadein;
+  animation-duration: 5.5s;
+  
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+}
+  50% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
+  90% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  
+  
 }
