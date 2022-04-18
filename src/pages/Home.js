@@ -24,7 +24,7 @@ export const Home = () => {
     
     useEffect(() => {
 
-        setTimeout(() => setLoading(false), 4000)
+        setTimeout(() => setLoading(false), 3000)
 
         if (currentHour < 12 && loading === false) {
             document.getElementById("greeting").innerHTML = "Good Morning!";
@@ -38,7 +38,7 @@ export const Home = () => {
             document.getElementById("greeting").innerHTML = "Good Evening!";
         }
 
-       setTimeout(myGreeting, 4000) 
+        setTimeout(myGreeting, 3000) 
         
     }, [loading]);
 
@@ -54,7 +54,8 @@ export const Home = () => {
 
                     <main> 
                         <div className='home-page'>
-                        <h1 id="greeting" className='heading'> Hello!</h1>
+                            <h1 id="greeting" className='heading'> Hello!</h1>
+                            {/* <h1 id="welcome" className='welcome'> Welcome to codeHealth!</h1> */}
 
                             <p className='welcome'>
                                 Stay up-to-date with codeHealth's  employment opportunities. 
@@ -63,7 +64,6 @@ export const Home = () => {
                             <NavButton
                                 innerText="Open Roles"
                                 route="/open-roles"
-
                             />
                         </div>
                     </main>

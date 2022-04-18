@@ -110,12 +110,11 @@ main {
   
 
 #greeting {
-  animation-name: fadein;
-  animation-duration: 5.5s;
-  
+  animation: fadeIn 3.5s forwards;
+  // animation: fadeOut 3.5s forwards;
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-40px);
@@ -126,15 +125,60 @@ main {
   }
   90% {
       opacity: 0;
-      -webkit-transform: translateY(40px);
+      -webkit-transform: translateY(20px);
   }
   100% {
       opacity: 1;
       -webkit-transform: translateY(0);
   }
+
 }
 
-@keyframes fadeInUp {
-  
-  
-}
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateY(-40px);
+//   }
+//   50% {
+//       opacity: 1;
+//       -webkit-transform: translateY(0);
+//   }
+//   80% {
+//       opacity: 0;
+//       -webkit-transform: translateY(20px);
+//   }
+//   90% {
+//     opacity: 0;
+//     transform: translateY(-40px)
+//   }
+//   100% {
+//       opacity: 1;
+//       -webkit-transform: translateY(0);
+//   }
+
+// }
+
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateY(0);
+//   }
+//   20% {
+//       opacity: 1;
+//       -webkit-transform: translateY(0);
+//   }
+//   40% {
+//       opacity: 0;
+//       -webkit-transform: translateY(20px);
+//   }
+//   80% {
+//     opacity: 0;
+//     transform: translateY(-20px)
+//   }
+//   100% {
+//       opacity: 1;
+//       -webkit-transform: translateY(0);
+//   }
+
+// }
+

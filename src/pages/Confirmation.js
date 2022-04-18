@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { Button, Modal } from 'react-materialize';
@@ -22,6 +22,13 @@ export const Confirmation = () => {
             }
         }
     }
+
+    const [isOpen, setOpen] = useState(false);
+    
+    const handleToggle = () => {
+        setOpen(!isOpen);
+    };
+
 
     return (
         <>
@@ -83,7 +90,7 @@ export const Confirmation = () => {
                         <div id="confirm">
                             <Button 
                              
-                                // onClick={homeRedirect}
+                                // onClick={handleToggle}
                                 
                             >
                                 Confirm

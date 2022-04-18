@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
-import { useState,useContext } from 'react';
+import { useContext } from 'react';
 import { useRangeLogic } from '../../../functions/useRangeLogic';
 import { FormContext } from '../../../context/FormContext';
+import './Range.scss'
 
 
 export const Ranges = () => {
@@ -19,9 +19,7 @@ export const Ranges = () => {
   return (
     <div>
     <Box sx={{ width: 250 }}>
-      <Typography id="non-linear-slider" gutterBottom>
-        What is your desired income? 
-      </Typography>
+      <p className='question'> What is your desired income? </p>
       <Slider
         min={50}
         step={5}
