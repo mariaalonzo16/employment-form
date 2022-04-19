@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import Lottie from 'lottie-react';
 import animationHeart from '../lotties/heart.json';
 import { Greeting } from '../components/greeting/Greeting';
+import { elementOrParentIsFixed } from 'materialize-css';
 
 
 
@@ -20,11 +21,14 @@ export const Home = () => {
 
     const myGreeting = () => {
         document.getElementById("greeting").innerHTML = "Welcome to codeHealth!"
+
+        // const greeting = document.getElementById("greeting");
+        // greeting.remove() 
     }
     
     useEffect(() => {
 
-        setTimeout(() => setLoading(false), 3000)
+        setTimeout(() => setLoading(false), 5000)
 
         if (currentHour < 12 && loading === false) {
             document.getElementById("greeting").innerHTML = "Good Morning!";
@@ -39,8 +43,13 @@ export const Home = () => {
         }
 
         setTimeout(myGreeting, 3000) 
+
+       
+        
         
     }, [loading]);
+
+    
 
     return (
             <>

@@ -25,7 +25,7 @@ export const Application = () => {
     return (
         <>
             <Helmet>
-                <title> codeHealth | Application</title>
+                <title> codeHealth | Application - {titleDisplay} </title>
             </Helmet>
 
             <TopNav />

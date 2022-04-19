@@ -107,7 +107,9 @@ main {
 }
 
 
-  
+#welcome {
+  visibility: none;
+}
 
 #greeting {
   animation: fadeIn 3.5s forwards;

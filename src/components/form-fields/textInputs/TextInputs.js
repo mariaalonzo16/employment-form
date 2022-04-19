@@ -4,6 +4,7 @@ import './TextInputs.scss';
 import { useInputLogic } from '../../../functions/useInputLogic';
 
 
+
 export const TextInputs = () => {
 
     const { 
@@ -12,6 +13,7 @@ export const TextInputs = () => {
         handleEmail,
         handlePhoneNumber
     } = useInputLogic();
+
 
     return (
         <>

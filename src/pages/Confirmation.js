@@ -23,12 +23,15 @@ export const Confirmation = () => {
         }
     }
 
-    const [isOpen, setOpen] = useState(false);
     
-    const handleToggle = () => {
-        setOpen(!isOpen);
-    };
 
+    // const nameStorage = formState.firstName;
+    
+
+    // sessionStorage.setItem('firstName', nameStorage);
+
+    const nameInStorage = sessionStorage.getItem('firstName');
+    console.log(nameInStorage)
 
     return (
         <>
@@ -68,7 +71,7 @@ export const Confirmation = () => {
                     ]}
                     bottomSheet={false}
                     fixedFooter={false}
-                    header="Thank you for your submission!"
+                    header={`Thank you for your submission, ${nameInStorage}!` }
                     id="Modal-10"
                     open={false}
                     className='confirmation'

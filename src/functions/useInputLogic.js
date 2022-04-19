@@ -12,7 +12,13 @@ export const useInputLogic = () => {
         console.log(updatedForm)
 
         setFormState(updatedForm);
+
+        const nameStorage = e.target.value;
+    
+        sessionStorage.setItem('firstName', nameStorage); 
     }
+
+    
 
 
     const handleLastName = (e) => {
