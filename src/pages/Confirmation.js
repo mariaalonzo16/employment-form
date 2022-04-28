@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { TopNav } from '../layouts/topNav/TopNav';
 import { Footers } from '../layouts/footer/Footers';
 import { Button, Modal } from 'react-materialize';
@@ -12,8 +12,6 @@ export const Confirmation = () => {
 
     const [ formState ] = useContext(FormContext)
 
-    console.log(formState)
-
     for (let i=0; i < Specialties.length; i++) {
         const checkedSpecialties = []
         if (formState.specialties[i]) {
@@ -22,13 +20,6 @@ export const Confirmation = () => {
             }
         }
     }
-
-    
-
-    // const nameStorage = formState.firstName;
-    
-
-    // sessionStorage.setItem('firstName', nameStorage);
 
     const nameInStorage = sessionStorage.getItem('firstName');
     console.log(nameInStorage)
@@ -52,11 +43,12 @@ export const Confirmation = () => {
                         {formState.specialties.map((interest,index) => (
                             <p key={index}>Specialty of Interest: {interest} </p>
                         ))}
-                        <p>Years Practiced: {formState.yearsPracticed}</p>
+                        <p>Years Practiced: {formState.yearsPracticed}</p>                      
                         <p>Desired Income: ${formState.desiredIncome}K</p>
                         <p>Resume: {formState.resumeCV}</p>
                     </div>
-                </div>
+                </div>   
+                                                                                                                                                                                                                                                                                                                                                                                     
 
                 <Modal
                     actions={[

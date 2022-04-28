@@ -20,7 +20,7 @@ export const TextInputs = () => {
             <TextInput
                     id="TextInput-32"
                     placeholder="First Name"
-                    validate
+                    validate={true}
                     minLength="2"
                     maxLength="15"
                     error="Please input your first name"
@@ -30,7 +30,7 @@ export const TextInputs = () => {
                 <TextInput
                     id="TextInput-32"
                     placeholder="Last Name"
-                    validate
+                    validate={true}
                     minLength="2"
                     maxLength="15"
                     error="Please input your last name"
@@ -42,7 +42,7 @@ export const TextInputs = () => {
                     email
                     error="Please input your email"
                     placeholder="Email"
-                    validate
+                    validate={true}
                     className= "text-input"
                     onChange={handleEmail} 
                 />
@@ -50,7 +50,7 @@ export const TextInputs = () => {
                     id="TextInput-32"
                     placeholder="Phone Number"
                     type="tel"
-                    validate
+                    validate={true}
                     maxLength="10"
                     minLength="2"
                     error="Please input your phone number"
