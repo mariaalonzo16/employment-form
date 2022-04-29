@@ -24,7 +24,6 @@ export const App = () => {
 
   return (
 
-    
     <FormContext.Provider value={[formState, setFormState]}>
       <Routes>
         {pageRoutes.map((route,index) => (
@@ -36,7 +35,6 @@ export const App = () => {
         ))}
       </Routes>
      
-      {/* <Test1 /> */}
     </FormContext.Provider>
   );
 }

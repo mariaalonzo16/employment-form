@@ -27,20 +27,20 @@ export const OpenRoles = () => {
                                 key={index}
                                 
                             >
-                            <p className='subtitle'> Job Description: </p>
+                            <h6 className='subtitle'> Job Description: </h6>
                             <p> {role.description}
                             </p>
                             <p>Primary hours will be Monday-Friday, 8am-5pm</p>
                             <p>No call or weekends</p>
                             
-                            <p className='subtitle'> Requirements: </p>
+                            <h6 className='subtitle'> Requirements: </h6>
                             <p> {role.licensure}</p>
                             <p> {role.experience}</p>
-                            <p className='subtitle'> Job Type: </p>
+                            <h6 className='subtitle'> Job Type: </h6>
                             <p> Full Time</p>
-                            <p className='subtitle'> Salary: </p>
+                            <h6 className='subtitle'> Salary: </h6>
                             <p> {role.salary} </p>
-                            <p className='subtitle'> Benefits: </p>
+                            <h6 className='subtitle'> Benefits: </h6>
                             <p> 401(k) </p>
                             <p> Dental insurance </p>
                             <p> Health insurance </p>

@@ -10,7 +10,7 @@ export const Buttons = () => {
 
     const [ formState ] = useContext(FormContext)
 
-    console.log(formState)
+    console.log(FormContext)
 
     const firstNameLength = formState.firstName.length
 
