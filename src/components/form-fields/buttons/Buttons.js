@@ -10,7 +10,7 @@ export const Buttons = () => {
 
     const [ formState ] = useContext(FormContext)
 
-    console.log(FormContext)
+    //
 
     const firstNameLength = formState.firstName.length
 
@@ -19,10 +19,82 @@ export const Buttons = () => {
     if (firstNameLength > 0){
         firstNameValid = true
     } 
+
+    //
+
+    const lastNameLength = formState.lastName.length
+    
+    let lastNameValid = false
+    
+    if (lastNameLength > 0){
+        lastNameValid = true
+    } 
+
+    //
+
+    const emailLength = formState.email.length
+
+    let emailValid = false
+
+    if (emailLength > 0){
+        emailValid = true
+    }
+
+    //
+
+    const phoneNumberLength = formState.phoneNumber.length
+
+    let phoneNumberValid = false
+
+    if (phoneNumberLength > 0){
+        phoneNumberValid = true
+    }
+
+    //
+
+    const specialtiesLength = formState.specialties.length
+
+    let specialtiesValid = false
+
+    if (specialtiesLength > 0){
+        specialtiesValid = true
+    }
+
+    //
+
+    const yearsPracticedLength = formState.yearsPracticed.length
+
+    let yearsPracticedValid = false
+
+    if (yearsPracticedLength > 0){
+        yearsPracticedValid = true
+    }
+
+    // 
+
+    const desiredIncomeLength = formState.desiredIncome.length
+
+    let desiredIncomeValid = false
+
+    if (desiredIncomeLength > 0){
+        desiredIncomeValid = true
+    }
+
+    //
+
+    // const resumeCVLength = formState.resumeCVLength.length
+
+    // let resumeCVValid = false
+
+    // if (resumeCVLength > 0){
+    //     resumeCVValid = true
+    // }
+
+    
     
     return (
         <div className='home-page'>
-            {firstNameValid ?
+            {firstNameValid && lastNameValid && emailValid && phoneNumberValid && specialtiesValid && yearsPracticedValid && desiredIncomeValid ? 
                 <Button
                     className='buttons'
                     node="button"
