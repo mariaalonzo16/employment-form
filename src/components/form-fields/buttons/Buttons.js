@@ -72,13 +72,13 @@ export const Buttons = () => {
 
     // 
 
-    const desiredIncomeLength = formState.desiredIncome.length
+    // const desiredIncomeLength = formState.desiredIncome.length
 
-    let desiredIncomeValid = false
+    // let desiredIncomeValid = false
 
-    if (desiredIncomeLength > 0){
-        desiredIncomeValid = true
-    }
+    // if (desiredIncomeLength > 0){
+    //     desiredIncomeValid = true
+    // }
 
     //
 
@@ -94,7 +94,7 @@ export const Buttons = () => {
     
     return (
         <div className='home-page'>
-            {firstNameValid && lastNameValid && emailValid && phoneNumberValid && specialtiesValid && yearsPracticedValid && desiredIncomeValid ? 
+            {firstNameValid && lastNameValid && emailValid && phoneNumberValid && specialtiesValid && yearsPracticedValid? 
                 <Button
                     className='buttons'
                     node="button"
