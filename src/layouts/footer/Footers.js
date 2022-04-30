@@ -22,17 +22,17 @@ export const Footers = () => {
                 links=
                 {
                     <ul className="icon-list">
-                        <li>
+                        <li className="spacing-link">
                             <a href="#!" > <AiFillFacebook className="icon"/> </a>
                             <span className="icon-text">Facebook</span>
                         </li>
-                        <li>
+                        <li className="spacing-link">
                             <a  href="#!" className="icon-text"> <AiFillInstagram className="icon"/> Instagram</a>
                         </li>
-                        <li>
+                        <li className="spacing-link">
                             <a  href="#!" className="icon-text"><AiFillGoogleSquare className="icon"/> Google</a>
                         </li>
-                        <li>
+                        <li className="spacing-link">
                             <a  href="#!" className="icon-text"><AiFillLinkedin className="icon"/>  Linkedin</a>
                         </li>
                     </ul>

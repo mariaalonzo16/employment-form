@@ -1,7 +1,7 @@
 import { Button } from 'react-materialize';
 import { useNavigate } from 'react-router-dom';
 import './Buttons.scss';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { FormContext } from '../../../context/FormContext';
 
 
@@ -12,33 +12,43 @@ export const Buttons = () => {
 
     //
 
-    const firstNameLength = formState.firstName.length
+    const firstNameLength = formState.firstName.length;
 
-    let firstNameValid = false
+    let firstNameValid = false;
     
-    if (firstNameLength > 0){
-        firstNameValid = true
-    } 
+    if (firstNameLength > 0) { firstNameValid = true };
 
     //
 
-    const lastNameLength = formState.lastName.length
+    const lastNameLength = formState.lastName.length;
     
-    let lastNameValid = false
+    let lastNameValid = false;
     
-    if (lastNameLength > 0){
-        lastNameValid = true
-    } 
+    if (lastNameLength > 0) { lastNameValid = true };
 
     //
 
-    const emailLength = formState.email.length
+    // const emailLength = formState.email.length
 
-    let emailValid = false
+    // let emailValid = false
 
-    if (emailLength > 0){
-        emailValid = true
-    }
+    // if (emailLength > 0){
+    //     emailValid = true
+    // }
+
+
+  const validateEmail = () => {
+    let user = document.getElementById("e").value;
+        let user2 = document.getElementById("e");
+        let regex = ['/^+([-]?+)*@+([-]?+)*({2,3})+$/'];
+        if (regex.test(user)) {
+            alert("done");
+            return (true);
+        }
+        else {
+            user2.style.border = "red solid 3px";
+            return (false);
+    }}
 
     //
 
@@ -72,13 +82,13 @@ export const Buttons = () => {
 
     // 
 
-    // const desiredIncomeLength = formState.desiredIncome.length
+    const desiredIncomeLength = formState.desiredIncome.length
 
-    // let desiredIncomeValid = false
+    let desiredIncomeValid = false
 
-    // if (desiredIncomeLength > 0){
-    //     desiredIncomeValid = true
-    // }
+    if (desiredIncomeLength > 0){
+        desiredIncomeValid = true
+    }
 
     //
 
@@ -90,11 +100,13 @@ export const Buttons = () => {
     //     resumeCVValid = true
     // }
 
-    
+    /* firstNameValid && lastNameValid && emailValid && phoneNumberValid && specialtiesValid && yearsPracticedValid && desiredIncomeValid? */
+
+    let validForm = firstNameValid && lastNameValid && validateEmail; 
     
     return (
         <div className='home-page'>
-            {firstNameValid && lastNameValid && emailValid && phoneNumberValid && specialtiesValid && yearsPracticedValid? 
+            { validForm ?
                 <Button
                     className='buttons'
                     node="button"
@@ -104,6 +116,7 @@ export const Buttons = () => {
                     
                     }}
                     
+                    
                 >
                     Submit  
                 </Button>
@@ -111,7 +124,8 @@ export const Buttons = () => {
                 <Button
                     className='buttons'
                     node="button"
-                    waves="light"  
+                    waves="light" 
+                    
                 >
                     Disabled  
                 </Button>
