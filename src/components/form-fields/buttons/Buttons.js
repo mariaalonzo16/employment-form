@@ -28,51 +28,38 @@ export const Buttons = () => {
 
     //
 
-    // const emailLength = formState.email.length
+    const emailRegex = /\S+@\S+\.\S+/;
+    let emailValid = false;
 
-    // let emailValid = false
-
-    // if (emailLength > 0){
-    //     emailValid = true
-    // }
-
-
-  const validateEmail = () => {
-    let user = document.getElementById("e").value;
-        let user2 = document.getElementById("e");
-        let regex = ['/^+([-]?+)*@+([-]?+)*({2,3})+$/'];
-        if (regex.test(user)) {
-            alert("done");
-            return (true);
-        }
-        else {
-            user2.style.border = "red solid 3px";
-            return (false);
-    }}
-
+    if (emailRegex.test(formState.email)) {
+       emailValid = true
+    }
+    
     //
 
-    const phoneNumberLength = formState.phoneNumber.length
-
+    const phoneNumberRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     let phoneNumberValid = false
 
-    if (phoneNumberLength > 0){
+    if (phoneNumberRegex.test(formState.phoneNumber)) {
         phoneNumberValid = true
     }
 
     //
 
     const specialtiesLength = formState.specialties.length
+    
 
     let specialtiesValid = false
+    
 
     if (specialtiesLength > 0){
         specialtiesValid = true
-    }
+    } 
 
     //
 
     const yearsPracticedLength = formState.yearsPracticed.length
+    
 
     let yearsPracticedValid = false
 
@@ -80,30 +67,29 @@ export const Buttons = () => {
         yearsPracticedValid = true
     }
 
-    // 
-
-    const desiredIncomeLength = formState.desiredIncome.length
-
-    let desiredIncomeValid = false
-
-    if (desiredIncomeLength > 0){
-        desiredIncomeValid = true
-    }
 
     //
 
-    // const resumeCVLength = formState.resumeCVLength.length
+    const resumeCVLength = formState.resumeCV.length
+    
+    let resumeCVValid = false
 
-    // let resumeCVValid = false
-
-    // if (resumeCVLength > 0){
-    //     resumeCVValid = true
-    // }
+    if (resumeCVLength > 0){
+        resumeCVValid = true
+    }
+    console.log(resumeCVValid)
 
     /* firstNameValid && lastNameValid && emailValid && phoneNumberValid && specialtiesValid && yearsPracticedValid && desiredIncomeValid? */
 
-    let validForm = firstNameValid && lastNameValid && validateEmail; 
-    
+    let validForm = 
+        firstNameValid && 
+        lastNameValid && 
+        emailValid && 
+        phoneNumberValid &&
+        specialtiesValid &&
+        yearsPracticedValid &&
+        resumeCVValid; 
+    console.log(validForm)
     return (
         <div className='home-page'>
             { validForm ?
@@ -127,7 +113,7 @@ export const Buttons = () => {
                     waves="light" 
                     
                 >
-                    Disabled  
+                    Submit 
                 </Button>
              }
         </div>

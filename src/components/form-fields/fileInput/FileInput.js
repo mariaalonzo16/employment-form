@@ -22,7 +22,6 @@ export const FileInput = () => {
                 label="Submit Resume"
                 type="file"
                 onChange={handleResumeCV}
-                validate={false}
                 
             />
         </span>
