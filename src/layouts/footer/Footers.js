@@ -7,13 +7,6 @@ import { AiFillFacebook, AiFillInstagram, AiFillGoogleSquare, AiFillLinkedin } f
 
 export const Footers = () => {
     return (
-        // <Footer 
-        //     className="footer">
-        //     <p className="grey-text text-lighten-4">
-        //         Include Social Media Links 
-        //     </p>
-        // </Footer>
-    
         
         <div className="main-footer">
             <Footer
@@ -24,22 +17,18 @@ export const Footers = () => {
                     <ul className="icon-list">
                         <li className="spacing-link">
                             <a href="#!" > <AiFillFacebook className="icon"/> </a>
-                            <span className="icon-text">Facebook</span>
                         </li>
                         <li className="spacing-link">
-                            <a  href="#!" className="icon-text"> <AiFillInstagram className="icon"/> Instagram</a>
+                            <a  href="#!" className="icon-text"> <AiFillInstagram className="icon"/> </a>
                         </li>
                         <li className="spacing-link">
-                            <a  href="#!" className="icon-text"><AiFillGoogleSquare className="icon"/> Google</a>
-                        </li>
-                        <li className="spacing-link">
-                            <a  href="#!" className="icon-text"><AiFillLinkedin className="icon"/>  Linkedin</a>
+                            <a  href="#!" className="icon-text"><AiFillLinkedin className="icon"/> </a>
                         </li>
                     </ul>
                 }
             >
             
-            <h5>
+            <h5 className="footer-heading">
                 Contact Us
             </h5>
             <p>  O: 123-456-7890</p>

@@ -24,5 +24,5 @@ export const pageRoutes = [
         name: "Confirmation",
         path: "/confirmation",
         element: <Confirmation />
-    }
+    },
 ]

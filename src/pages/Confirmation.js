@@ -33,7 +33,7 @@ export const Confirmation = () => {
             <main>
             <div className='home-page'>
                 <div className='confirmation'>
-                    <h3 className='confirm-heading'>Please Confirm your Information</h3> 
+                    <h5>Please Confirm your Information</h5> 
                     <div className='confirm-info'>
                         <p>First Name: {formState.firstName}</p>
                         <p>Last Name: {formState.lastName}</p>
@@ -41,15 +41,15 @@ export const Confirmation = () => {
                         <p>Phone Number: {formState.phoneNumber}</p>
 
                         {formState.specialties.map((interest,index) => (
+                            <>
                             <p key={index}>Specialty of Interest: {interest} </p>
+                            </>
                         ))}
                         <p>Years Practiced: {formState.yearsPracticed}</p>                      
                         <p>Desired Income: ${formState.desiredIncome}K</p>
                         <p>Resume: {formState.resumeCV}</p>
                     </div>
                 </div>   
-                                                                                                                                                                                                                                                                                                                                                                                     
-
                 <Modal
                     actions={[
                         <Button 
@@ -80,28 +80,19 @@ export const Confirmation = () => {
                         preventScrolling: true,
                         startingTop: '4%'
                     }}
-                    // root={[object HTMLBodyElement]}
                     trigger={
                         <div id="confirm">
-                            <Button 
-                             
-                                // onClick={handleToggle}
-                                
+                            <Button   
                             >
                                 Confirm
                             </Button>
                         </div>
                     }
                     >
-                    
-                    {/* <p>
-                       Thank You for your Submission!
-                    </p> */}
                     </Modal>
                 </div>
             </main>
-            <Footers />
-            
+            <Footers />    
         </>
     );
 }

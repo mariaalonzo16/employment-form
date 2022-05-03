@@ -23,19 +23,19 @@ export const TopNav = () => {
                     outDuration: 200,
                     preventScrolling: true
                 }}
-                >
-                    <NavItem href="../" className='navItem'>
-                        Home
-                    </NavItem>
-                    <NavItem href="../open-roles" className='navItem'>
-                        Open Roles
-                    </NavItem>
-                    <NavItem href="" className='navItem'>
-                        About
-                    </NavItem>
-                    <NavItem href="" className='navContact'>
-                        Contact Us
-                    </NavItem> 
+            >
+                <NavItem href="../" className='navItem'>
+                    Home
+                </NavItem>
+                <NavItem href="../open-roles" className='navItem'>
+                    Open Roles
+                </NavItem>
+                <NavItem href="" className='navItem'>
+                    About
+                </NavItem>
+                <NavItem href="" className='navItem'>
+                    Contact Us
+                </NavItem> 
             </Navbar>    
         </header>
     );

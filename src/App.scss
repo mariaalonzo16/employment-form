@@ -50,9 +50,9 @@ body {
 //personal
 
 .collapsible-header {
-  background-color: $primary;
+  background-color: $secondary;
   border-bottom: 1px solid $secondary;
-  font-weight: 900;
+  font-size: 1.2rem;
   color: $light;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .heading {
-  font-size: 40px;
+  font-size: 2.0rem;
   text-align: center;
 }
 
@@ -79,15 +79,31 @@ body {
   max-inline-size: fit-content;
   margin: auto;
   text-align: center;
+  max-height: 500px ;
 }
 
+.lottie {
+  max-width: 500px;
+  max-inline-size: fit-content;
+  margin: auto;
+  text-align: center;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+ 
 main {
   flex: 1 0 auto;
   padding: 30px;
+  // height: calc(100vh - 56px);
 }
+
+
+
 
 .subtitle {
   font-weight: 900;
+  font-size: 1.2rem !important;
 }
 
 .roles-page {
@@ -96,7 +112,7 @@ main {
 }
 
 .welcome {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -136,51 +152,32 @@ main {
 
 }
 
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0;
-//     -webkit-transform: translateY(-40px);
-//   }
-//   50% {
-//       opacity: 1;
-//       -webkit-transform: translateY(0);
-//   }
-//   80% {
-//       opacity: 0;
-//       -webkit-transform: translateY(20px);
-//   }
-//   90% {
-//     opacity: 0;
-//     transform: translateY(-40px)
-//   }
-//   100% {
-//       opacity: 1;
-//       -webkit-transform: translateY(0);
-//   }
+.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
+  text-align: center;
+}
 
-// }
+.modal .modal-content {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
 
-// @keyframes fadeOut {
-//   0% {
-//     opacity: 0;
-//     -webkit-transform: translateY(0);
-//   }
-//   20% {
-//       opacity: 1;
-//       -webkit-transform: translateY(0);
-//   }
-//   40% {
-//       opacity: 0;
-//       -webkit-transform: translateY(20px);
-//   }
-//   80% {
-//     opacity: 0;
-//     transform: translateY(-20px)
-//   }
-//   100% {
-//       opacity: 1;
-//       -webkit-transform: translateY(0);
-//   }
+.modal .modal-footer {
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
 
-// }
+h4 {
+  font-size: 20px;
+}
 
+
+.brand-logo {
+  font-size: 2.0rem !important;
+}
+p {
+  font-size: 1.0rem;
+}

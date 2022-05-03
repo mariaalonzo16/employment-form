@@ -7,8 +7,6 @@ import { Roles } from '../data/Roles';
 import { Helmet } from 'react-helmet';
 
 export const OpenRoles = () => {
-
-
     return (
         <>
             <Helmet>
@@ -18,21 +16,18 @@ export const OpenRoles = () => {
             <main>
                 <div className='roles-page'>
                     <h1 className='heading'>Open Roles</h1>
-
                     <Collapsible accordion>
                         {Roles.map((role, index) => (
                             <CollapsibleItem
                                 expanded={false}
                                 header={role.title}
-                                key={index}
-                                
+                                key={index}  
                             >
                             <h6 className='subtitle'> Job Description: </h6>
                             <p> {role.description}
                             </p>
                             <p>Primary hours will be Monday-Friday, 8am-5pm</p>
-                            <p>No call or weekends</p>
-                            
+                            <p>No weekends or on calls</p>
                             <h6 className='subtitle'> Requirements: </h6>
                             <p> {role.licensure}</p>
                             <p> {role.experience}</p>
@@ -56,11 +51,8 @@ export const OpenRoles = () => {
                             </div>
                         </CollapsibleItem>
                         ))}
-                    </Collapsible>
-
-                    
-                </div>
-                
+                    </Collapsible>   
+                </div>    
             </main>
             <Footers />
         </>

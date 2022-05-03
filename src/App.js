@@ -4,8 +4,6 @@ import React, {  useState }from 'react';
 import { FormContext } from './context/FormContext';
 import { pageRoutes } from './routes/pageRoutes';
 
-
-
 export const App = () => {
 
  const formValues = {
@@ -17,11 +15,10 @@ export const App = () => {
    yearsPracticed: '',
    desiredIncome:'50',
    resumeCV: ''
-  }
+  };
 
   const [ formState, setFormState ] = useState(formValues)
   
-
   return (
 
     <FormContext.Provider value={[formState, setFormState]}>

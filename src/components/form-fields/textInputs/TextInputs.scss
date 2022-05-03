@@ -1,5 +1,8 @@
 @use '../../../styles/colors/color.scss' as *;
 
+.text-input{
+    font-size: 1.0rem !important;
+}
 .text-input:focus {
     border-bottom: 1px solid $dark !important;
     -webkit-box-shadow: 0 1px 0 0 $dark;
