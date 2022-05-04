@@ -1,7 +1,7 @@
 import "./Footers.scss";
 import React from 'react';
 import { Footer } from 'react-materialize';
-import { AiFillFacebook, AiFillInstagram, AiFillGoogleSquare, AiFillLinkedin } from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 
 
