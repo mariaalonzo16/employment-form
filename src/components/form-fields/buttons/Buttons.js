@@ -110,8 +110,6 @@ export const Buttons = () => {
                 <Button
                     className='buttons'
                     node="button"
-                    waves="light" 
-                    
                 >
                     Submit 
                 </Button>
