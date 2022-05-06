@@ -36,6 +36,7 @@ export const Footers = () => {
             <p>  E: codehealth@medicine.org</p>
             <p>  HQ: 123 Hospital St</p>
             <p>  Raleigh NC, 27703 </p>
+            
             </Footer>
         </div>
     );

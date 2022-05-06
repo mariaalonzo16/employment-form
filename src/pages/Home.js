@@ -48,16 +48,19 @@ export const Home = () => {
 
                 <main> 
                     <div className='home-page'>
+                        
                         <h1 id="greeting" className='heading'> Hello!</h1>
                 
                         <p className='welcome'>
                             Stay up-to-date with codeHealth's  employment opportunities. 
                         </p>
 
-                        <NavButton
-                            innerText="Open Roles"
-                            route="/open-roles"
-                        />
+                        <div className='navigation-button'>
+                            <NavButton
+                                innerText="Open Roles"
+                                route="/open-roles"
+                            />
+                        </div>
                     </div>
                 </main>
 

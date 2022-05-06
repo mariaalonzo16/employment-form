@@ -1,9 +1,19 @@
 @use '../../styles/colors/color.scss' as *;
 
+.contact-us{
+    display: inline;
+}
+
 .footer {
     background-color: $primary;
     flex-shrink: 0;
 }
+
+footer div.container div.row {
+    display: flex;
+}
+
+
 
 .footer-heading{
     font-size: 2.0rem;
@@ -34,15 +44,4 @@
     margin: 5px;
 }
 
-@media only screen and (min-width: 300px){
-.row .col.offset-l2 {
-    margin-left: 16.6666666667% !important;
-}}
 
-@media only screen and (min-width:300px){
-.row .col.l4 {
-    width: 33.3333333333%;
-    margin-left: auto;
-    left: auto;
-    right: auto;
-}}

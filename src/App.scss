@@ -72,14 +72,15 @@ body {
 .heading {
   font-size: 2.0rem;
   text-align: center;
+  margin: 40px;
 }
 
 .home-page{
   max-width: 500px;
   max-inline-size: fit-content;
-  margin: auto;
   text-align: center;
   max-height: 500px ;
+  margin: auto;
 }
 
 .lottie {
@@ -91,14 +92,21 @@ body {
   overflow: hidden;
 }
 
- 
+@media only screen and (min-width: 600px) {
+  main {
+    height: calc(100vh - 64px) !important;
+  }
+}
 main {
   flex: 1 0 auto;
   padding: 30px;
-  // height: calc(100vh - 56px);
+  height: calc(100vh - 56px);
+  overflow-y: scroll;
 }
 
-
+.navigation-button{
+  margin: 10px;
+}
 
 
 .subtitle {
@@ -114,6 +122,7 @@ main {
 .welcome {
   font-size: 1.2rem;
   text-align: center;
+  margin: 20px;
 }
 
 #root {
@@ -181,4 +190,5 @@ h4 {
 p {
   font-size: 1.0rem !important;
 }
+
 
