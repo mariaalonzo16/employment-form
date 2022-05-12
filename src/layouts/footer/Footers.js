@@ -33,7 +33,7 @@ export const Footers = () => {
             </h5>
             <p>  O: 123-456-7890</p>
             <p>  F: 098-765-4321</p>
-            <p>  E: codehealth@medicine.org</p>
+            <p>  E: codehealth@code.org</p>
             <p>  HQ: 123 Hospital St</p>
             <p>  Raleigh NC, 27703 </p>
             

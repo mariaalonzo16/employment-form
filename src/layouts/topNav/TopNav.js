@@ -27,11 +27,11 @@ export const TopNav = () => {
                 <NavItem href="../" className='navItem'>
                     Home
                 </NavItem>
-                <NavItem href="../open-roles" className='navItem'>
-                    Open Roles
-                </NavItem>
                 <NavItem href="" className='navItem'>
                     About
+                </NavItem>
+                <NavItem href="../open-roles" className='navItem'>
+                    Open Roles
                 </NavItem>
                 <NavItem href="" className='navItem'>
                     Contact Us

@@ -14,13 +14,14 @@
 }
 
 .navItem:hover {
-    background-color: $hover !important;
     font-size: 15px;
     font-weight: bolder;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
-.brand-logo {
-    
+.sidenav li>a:hover {
+    background-color: $hover!important;
 }
 
 #mobile-nav {

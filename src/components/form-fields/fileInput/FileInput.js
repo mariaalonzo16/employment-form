@@ -19,7 +19,7 @@ export const FileInput = () => {
         <span >
             <TextInput
                 id="TextInput-26"
-                label="Submit Resume"
+                label="Resume/CV"
                 type="file"
                 onChange={handleResumeCV}
                 
