@@ -27,7 +27,7 @@ export const Footers = () => {
                     </ul>
                 }
             >
-            
+            <h5 className="desktop-only"> Stay Connected </h5>
             <h5 className="footer-heading">
                 Contact Us
             </h5>

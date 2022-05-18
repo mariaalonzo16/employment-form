@@ -4,6 +4,10 @@
     display: inline;
 }
 
+.desktop-only{
+    left: 80px;
+}
+
 .footer {
     background-color: $primary;
     flex-shrink: 0;
@@ -27,7 +31,9 @@ footer div.container div.row {
 @media only screen and (min-width: 600px) {
     .icon-list {
       flex-direction: row;
+      margin: 70px;
     }
+    
 }
 
 .icon {
@@ -52,6 +58,7 @@ footer div.container div.row {
 
 .spacing-link{
     margin: 5px;
+    text-align: center;
 }
 
 
