@@ -4,8 +4,12 @@
     display: inline;
 }
 
+.column{
+    display: flex;
+}
+
 .desktop-only{
-    left: 80px;
+    text-align: none;
 }
 
 .footer {
@@ -15,6 +19,8 @@
 
 footer div.container div.row {
     display: flex;
+    justify-content: center;
+    flex-direction: inherit;
 }
 
 
@@ -26,20 +32,13 @@ footer div.container div.row {
 .icon-list{
     display: flex;
     flex-direction: column; 
-}
-
-@media only screen and (min-width: 600px) {
-    .icon-list {
-      flex-direction: row;
-      margin: 70px;
-    }
-    
+    // justify-content: center;
 }
 
 .icon {
     color: $light;
     width: 100px;
-    height: 30px;
+    height: 2.5rem;
     margin: 1px; 
 }
 
@@ -57,8 +56,26 @@ footer div.container div.row {
 }
 
 .spacing-link{
-    margin: 5px;
     text-align: center;
 }
 
+// .row {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// @media only screen and (min-width: 993px){
+//     .row {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//     }
+// }
+
+// @media only screen and (min-width: 993px){
+//     .desktop-only{
+//         text-align: center;
+//     }
+// }
 

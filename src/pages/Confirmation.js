@@ -10,7 +10,8 @@ import { Helmet } from 'react-helmet';
 export const Confirmation = () => {
     let navigate = useNavigate();
 
-    const [ formState ] = useContext(FormContext)
+    const [ formState, setFormState ] = useContext(FormContext)
+    
 
     for (let i=0; i < Specialties.length; i++) {
         const checkedSpecialties = []
@@ -23,6 +24,28 @@ export const Confirmation = () => {
 
     const nameInStorage = sessionStorage.getItem('firstName');
     console.log(nameInStorage)
+
+    const resetState = () => {
+        console.log('reset')
+        const formValues = {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            specialties: [],
+            yearsPracticed: '',
+            desiredIncome:'50',
+            resumeCV: ''
+        };
+
+        
+        setFormState(formValues); 
+          
+        navigate("/")
+    }
+
+    console.log(formState)
+
 
     return (
         <>
@@ -56,7 +79,8 @@ export const Confirmation = () => {
                             modal="close" 
                             node="button" 
                             waves="green"
-                            onClick={() => {navigate("/")}}
+                            // onClick={() => {navigate("/")}}
+                            onClick={resetState}
                         >
                             Close
                         </Button>

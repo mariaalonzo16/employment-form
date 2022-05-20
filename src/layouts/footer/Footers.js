@@ -9,25 +9,33 @@ export const Footers = () => {
     return (
         
         <div className="main-footer">
+        
             <Footer
                 className="footer"
                 copyrights=" Copyright @ 2022 codeHealth Inc. All Rights Reserved "
-                links=
-                {
+                header='Stay Connected'
+                links= 
+                {   
                     <ul className="icon-list">
-                        <li className="spacing-link">
-                            <a href="#!" > <AiFillFacebook className="icon"/> </a>
-                        </li>
-                        <li className="spacing-link">
-                            <a  href="#!" className="icon-text"> <AiFillInstagram className="icon"/> </a>
-                        </li>
-                        <li className="spacing-link">
-                            <a  href="#!" className="icon-text"><AiFillLinkedin className="icon"/> </a>
-                        </li>
+                        {/* <div>
+                            <h5 className="desktop-only"> Stay Connected </h5>
+                        </div> */}
+                        <div className="row">
+                            <li className="spacing-link">
+                                <a href="#!" > <AiFillFacebook className="icon"/> </a>
+                            </li>
+                            <li className="spacing-link">
+                                <a  href="#!" className="icon-text"> <AiFillInstagram className="icon"/> </a>
+                            </li>
+                            <li className="spacing-link">
+                                <a  href="#!" className="icon-text"><AiFillLinkedin className="icon"/> </a>
+                            </li>
+                        </div>
                     </ul>
+                    
                 }
             >
-            <h5 className="desktop-only"> Stay Connected </h5>
+            
             <h5 className="footer-heading">
                 Contact Us
             </h5>
