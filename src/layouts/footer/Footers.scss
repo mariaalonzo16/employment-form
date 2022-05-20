@@ -9,7 +9,17 @@
 }
 
 .desktop-only{
-    text-align: none;
+    text-align: center;
+    visibility: hidden;
+    display: none;
+}
+
+@media only screen and (min-width: 601px){
+    .desktop-only{
+        text-align: center;
+        visibility:visible;
+        display: contents;
+    }
 }
 
 .footer {

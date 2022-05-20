@@ -17,9 +17,9 @@ export const Footers = () => {
                 links= 
                 {   
                     <ul className="icon-list">
-                        {/* <div>
-                            <h5 className="desktop-only"> Stay Connected </h5>
-                        </div> */}
+                        <div className="desktop-only">
+                            <h5> Stay Connected </h5>
+                        </div>
                         <div className="row">
                             <li className="spacing-link">
                                 <a href="#!" > <AiFillFacebook className="icon"/> </a>
