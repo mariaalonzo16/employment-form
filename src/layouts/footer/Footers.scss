@@ -19,7 +19,13 @@
         text-align: center;
         visibility:visible;
         display: contents;
+        font-size: 2.00rem !important;
+        
     }
+}
+
+h5{
+    font-size: 2.00rem;
 }
 
 .footer {
@@ -31,6 +37,14 @@ footer div.container div.row {
     display: flex;
     justify-content: center;
     flex-direction: inherit;
+}
+
+@media only screen and (min-width: 601px){
+    footer div.container div.row {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
 
 

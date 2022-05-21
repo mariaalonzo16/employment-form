@@ -40,6 +40,8 @@ export const Confirmation = () => {
 
         
         setFormState(formValues); 
+
+        sessionStorage.clear()
           
         navigate("/")
     }
