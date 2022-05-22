@@ -6,7 +6,7 @@
 
 ## Description
 
-Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, and array mapping.
+Employment Form was built using React, SASS, Node, and Materialize. Throughout the web application we incorporated useEffect, useState, Context API, ternary operators, if-else statements, and array mapping.
 
 ## Preview
 
@@ -16,7 +16,7 @@ Employment Form was built using React, SASS, Node, and Materialize. Throughout t
 
 ## Business Use Case
 
-- Provides potential employers with an interface that can be implemented during their search for new talent
+- Provides employers with an interface that can be implemented during their search for new talent
 
 ## Status
 
@@ -32,14 +32,14 @@ Employment Form was built using React, SASS, Node, and Materialize. Throughout t
 
 ## Usage
 
-After the project files are cloned, feel free to edit the JavaScript and SASS files included within the `src` directory to edit the website as you see fit. To preview the changes you make to the code, you can run `npm start` in terminal.
+After the project files are cloned, run `npm start`. Feel free to edit the JavaScript and SASS files included within the `src` directory to edit the web application as you see fit. To preview the changes you make to the code, you can run `npm start` in terminal.
 
 ## Roadmap
 
-Employment Form remains an on-going project, open to contributions.  Functionality that could improve the UX include the following:
+Employment Form remains an on-going project, open to contributions.  Functionality that could be included:
 
-1) Store data after applicants submits application in a back-end server. 
-2) Add authentication
+1) Store user data after applicants submits application in a back-end server
+2) Add authentication to create application accounts
 3) Fetch open role data from a database
 
 ## Bugs and Issues
@@ -49,10 +49,7 @@ See a bug or an issue with this project? [Open a new issue](https://github.com/m
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
-
 ## About
-
 Employment Form was created by and is maintained by [Maria Alonzo](https://www.linkedin.com/in/maria-jose-alonzo-claudino/).
 
 ## License
